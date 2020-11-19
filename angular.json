@@ -123,10 +123,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "ptracker-landing",
-  "cli": {
-    "analytics": "02e2659b-d4de-4c8b-a271-2ca72b33223c"
-  }
+    }},
+  "defaultProject": "ptracker-landing"
 }
