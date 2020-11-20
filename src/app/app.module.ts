@@ -10,6 +10,7 @@ import { SharedModule } from "./modules/shared/shared.module";
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HomeComponent } from './components/pages/home/home.component';
 
 
 // AoT requires an exported function for factories
@@ -19,7 +20,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
