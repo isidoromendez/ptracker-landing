@@ -1,0 +1,65 @@
+/* Style the video: 100% width and height to cover the entire window */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+  
+/* Add some content at the bottom of the video/page */
+.content {
+    /* position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: #f1f1f1;
+    width: 98%;
+    padding: 1%; */
+    
+}
+.sec1{
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.sec1 .box.gtsm{   
+    margin-top: 10em;
+    height: 100%;
+}
+
+.sec1 .box.ltsm{  
+    margin-top: 12em;
+}
+
+.sec1 h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;    
+}
+.sec1 .box.gtsm h1{
+    font-size: 250%;
+}
+.sec1 p{
+    
+    //font-family: 'Press Start 2P', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+    font-family: 'Archivo', sans-serif;
+    font-size: 120%;
+}
+
+/* sec2 */
+.sec2{
+    background-color: white;
+}
+
+/* side */
+.example-container {
+    width: 100%;
+    height: auto;
+}
+
+
+.white-icon {
+    color: white;
+}

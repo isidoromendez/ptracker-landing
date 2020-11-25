@@ -1,7 +1,17 @@
 {
-    "HOME": {
-      "TITLE": "Hello Angular with ngx-translate!",
-      "SELECT": "Change language"
-    }
+  "home": {
+    "nav": {
+      "quienes-somos":"¿Who we are?",
+      "que-hacemos":"¿What we do?",
+      "proyectos": "Proyects"
+    },
+    "sec1":{
+      "title":"Technology innovation ",
+      "text1":"(traslate)Desarrollamos proyectos integrando tecnologías de redes, iot, web y mobile para resolver problemas mediante innovación continua."
+    }    
+  },
+  "gen":{
+    "hola":"Hi",
+    "page-title":"Patagonia Tracker"
   }
-  
+}

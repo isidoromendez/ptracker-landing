@@ -21,13 +21,13 @@ export class AppComponent {
 
     const browserLang = this.translate.getBrowserLang();
     this.translate.use(browserLang.match(/en|es/) ? browserLang : 'es');
-
-    let video:any = document.getElementById("myVideo"); 
-    video.muted=true;
-    video.play();
-  }
-
-  setTheTitle(): void {
-    this.title.setTitle(this.pageTitle);
+    this.translate.get("gen.page-title").subscribe((res: string) => {
+      this.title.setTitle(res);
+    });
+    this.translate.stream('gen.page-title').subscribe((res: string) => {
+      this.title.setTitle(res);
+    })
+    
+    
   }
 }

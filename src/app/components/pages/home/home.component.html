@@ -1,1 +1,100 @@
-<p>home works!</p>
+<div style="height: 100vh;">
+  <!-- toolbar -->
+  <div class="content">
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column">
+      <div fxLayout="column">
+        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+        <a href="#" mat-button>Menu Item 1</a>
+        <a href="#" mat-button>Menu Item 2</a>
+        <a href="#" mat-button>Menu Item 3</a>
+        <a href="#" mat-button>Menu Item 4</a>
+        <a href="#" mat-button>Menu Item 5</a>
+        <a href="#" mat-button>Menu Item 6</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <video muted autoplay loop id="myVideo">  
+        <source src="assets/videos/video.mp4" type="video/mp4" >
+      </video>
+      <!-- Toolbar -->
+      <div fxLayout="row" fxLayoutAlign="space-between">
+          <!-- hamburguesa -->
+          <div fxShow="true" fxHide.gt-sm="true">
+            <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
+          </div>
+          <!-- logo -->
+          <!-- Menu grande -->
+          <div>
+            <h1>{{ 'gen.hola' | translate }}</h1>
+          </div>
+          <!-- lado derecho -->
+          <div dir="rtl" fxLayoutGap="0px">
+            <!-- idioma -->
+            <label>
+                {{ 'gen.hola' | translate }}
+                <select #langSelect (change)="translate.use(langSelect.value)">
+                <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+                </select>
+            </label>
+            <!-- boton -->
+            
+          </div>
+      </div>  
+      <!-- sec1 -->
+      <div class="sec1">
+        <div    
+        ngClass.lt-sm = "ltsm"  
+        ngClass.gt-sm = "gtsm" 
+        class="box"
+        fxLayout="row" fxLayoutAlign="center">        
+            <div
+                fxFlex="0.3 0 calc(8em)"
+                fxFlex.lt-sm="0.8 0 calc(8em)"
+                ngClass.lt-sm = "ltsm"
+                ngClass.gt-sm = "gtsm">
+                <h1>{{ 'home.sec1.title' | translate }}</h1>
+                <p>{{ 'home.sec1.text1' | translate }}</p> 
+            </div>
+        </div>
+      </div>
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<!-- <video muted autoplay loop id="myVideo">  
+    <source src="assets/videos/video.mp4" type="video/mp4" >
+</video>
+<header>
+    <div class="content">
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <div>
+            <h1>{{ 'gen.hola' | translate }}</h1>
+            </div>
+            <div dir="rtl" fxLayoutGap="0px">
+            <label>
+                {{ 'gen.hola' | translate }}
+                <select #langSelect (change)="translate.use(langSelect.value)">
+                <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+                </select>
+            </label>
+            </div>
+        </div>  
+    </div>
+</header>
+
+<div    
+ngClass.lt-sm = "ltsm"  
+ngClass.gt-sm = "gtsm" class="sec1"
+fxLayout="row"  fxLayoutGap="10px" fxLayoutAlign="space-between" fxLayoutAlign="center">        
+    <div
+        fxFlex="0.3 0 calc(8em)"
+        fxFlex.lt-sm="1ks 0 calc(8em)"
+        ngClass.md = "md"
+        ngClass.gt-md = "md">
+        <h1>{{ 'home.sec1.title' | translate }}</h1>
+        <p>{{ 'home.sec1.text1' | translate }}</p> 
+    </div>
+</div>
+<footer></footer> -->
