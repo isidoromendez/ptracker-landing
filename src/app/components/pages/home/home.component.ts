@@ -11,6 +11,9 @@ export class HomeComponent implements OnInit {
   pageTitle: string;
   constructor(public translate: TranslateService, public title: Title) {}
   
+  
+
+  
   ngOnInit(): void {
     this.translate.addLangs(['en', 'es']);
     this.translate.setDefaultLang('es');

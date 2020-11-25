@@ -18,29 +18,39 @@
         <source src="assets/videos/video.mp4" type="video/mp4" >
       </video>
       <!-- Toolbar -->
-      <div fxLayout="row" fxLayoutAlign="space-between">
-          <!-- hamburguesa -->
-          <div fxShow="true" fxHide.gt-sm="true">
-            <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
-          </div>
-          <!-- logo -->
-          <!-- Menu grande -->
-          <div>
-            <h1>{{ 'gen.hola' | translate }}</h1>
-          </div>
-          <!-- lado derecho -->
-          <div dir="rtl" fxLayoutGap="0px">
-            <!-- idioma -->
-            <label>
-                {{ 'gen.hola' | translate }}
-                <select #langSelect (change)="translate.use(langSelect.value)">
-                <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-                </select>
-            </label>
-            <!-- boton -->
-            
-          </div>
-      </div>  
+      <div class="spetial-toolbar">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <!-- hamburguesa -->
+            <div fxShow="true" fxHide.gt-sm="true">
+              <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
+            </div>
+            <!-- logo -->
+            <img class="logo" src="./assets/img/logo.png" alt="">
+            <!-- Menu grande -->
+            <div 
+            fxLayout="row" 
+            fxLayoutAlign="space-around  center" 
+            fxFlex="0.9 0 calc(4em)"
+            class="menu">
+              <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.quienes-somos' | translate }}</a></div>
+              <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.que-hacemos' | translate }}</a></div>
+              <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.proyectos' | translate }}</a></div>
+            </div>
+            <!-- lado derecho -->
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="0.2 0 10em">
+              <!-- idioma -->
+              <div>
+                <app-lang-select></app-lang-select>
+                
+              </div>
+              <!-- boton -->
+              <div>
+                <button mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
+              </div>
+            </div>
+        </div>  
+      </div>
+      
       <!-- sec1 -->
       <div class="sec1">
         <div    

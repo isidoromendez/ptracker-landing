@@ -16,6 +16,9 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import { LangSelectComponent } from './components/pieces/lang-select/lang-select.component';
 
 
 // AoT requires an exported function for factories
@@ -27,7 +30,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LangSelectComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     }),
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
