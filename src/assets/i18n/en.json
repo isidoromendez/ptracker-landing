@@ -4,12 +4,24 @@
       "quienes-somos":"¿Who we are?",
       "que-hacemos":"¿What we do?",
       "proyectos": "Proyects",
-      "contactarme":"Contactarme"
+      "contactarme":"Contact"
     },
     "sec1":{
       "title":"Technology innovation ",
-      "text1":"(traslate)Desarrollamos proyectos integrando tecnologías de redes, iot, web y mobile para resolver problemas mediante innovación continua."
+      "text1":"(T)Desarrollamos proyectos integrando tecnologías de redes, iot, web y mobile para resolver problemas mediante innovación continua."
+    },
+    "sec3":{
+      "title":"(T) Soluciones de calidad",
+      "text1":"(T) Somos una división tecnológica de Cotesma. Nuestra finalidad es brindar servicios de alto valor agregado relacionados con el mundo de las telecomunicaciones que puedan ser implementados en distintos escenarios geográficos y países."
+    },
+    "sec4":{
+      "title":"(T) Experiencia Volcán Lanín",
+      "text1":"(T) Te acompañamos en tu aventura para que sea segura e inolvidable.",
+      "btn":"More info"
     }    
+  },
+  "footer":{
+    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados"
   },
   "gen":{
     "hola":"Hi",

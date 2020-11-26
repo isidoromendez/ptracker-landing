@@ -1,5 +1,13 @@
 /* Style the video: 100% width and height to cover the entire window */
 
+.page-container{
+    padding-top:2em;
+}
+
+.page-container.ltsm{
+    padding-top:1em;    
+}
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -22,36 +30,138 @@
 .sec1{
     color: #f1f1f1;
     text-align: center;
+    margin-top: 15em;
+    margin-bottom: 15em;
 }
 
-.sec1 .box.gtsm{   
-    margin-top: 10em;
-    height: 100%;
+.gtsm .sec1 .box{   
+    
 }
 
-.sec1 .box.ltsm{  
-    margin-top: 12em;
+.ltsm .sec1 .box{   
+    
 }
+
 
 .sec1 h1{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;    
 }
-.sec1 .box.gtsm h1{
-    font-size: 250%;
+.gtsm .sec1 .box h1{
+    font-size: 400%;
+    margin-bottom: 0.5em;
+    font-weight: 700; 
 }
-.sec1 p{
+.gtsm .sec1 .box p{
+    font-size: 170%;
+    line-height: 1.5; 
     
-    //font-family: 'Press Start 2P', sans-serif;
-    //font-family: 'Open Sans', sans-serif;
-    font-family: 'Archivo', sans-serif;
-    font-size: 120%;
 }
 
 /* sec2 */
 .sec2{
     background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
+
+.ltsm .sec2 .box{
+    margin-left: var(--margin-left-ltsm);
+    margin-right: var(--margin-right-ltsm);
+}
+
+.gtsm .sec2 .box{
+    margin-left: var(--margin-left-gtsm);
+    margin-right: var(--margin-right-gtsm);
+}
+
+.sec2 .box .item{
+    
+}
+
+/* sec3 */
+.sec3{
+    background-image: url("../../../../assets/img/bg-soluciones.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.ltsm .sec3 .box{
+    margin-left: var(--margin-left-ltsm);
+    margin-right: var(--margin-right-ltsm);
+}
+
+.gtsm .sec3 .box{
+    padding-left: 42em;
+    margin-left: var(--margin-left-gtsm);
+    padding-top: 6em;
+    padding-right: 9em;
+    margin-right: var(--margin-right-gtsm);
+    text-align: right;
+}
+
+.gtsm .sec3 .box h1{
+    color: white;
+    font-size: 350%;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    font-weight: 700; 
+}
+.gtsm .sec3 .box p{
+    color: white;
+    font-size: 150%;
+    line-height: 1.4; 
+    text-justify: right;
+    font-weight: 200;
+}
+
+/* sec4 */
+.sec4{
+    padding-top: 9em;
+    background-image: url("../../../../assets/img/bg-proy-lanin.png"); /* The image used */
+    background-color: white; /* Used if the image is unavailable */
+    height: 800px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.gtsm .sec4 .box{
+    padding-left: 0;
+    margin-left: var(--margin-left-gtsm);
+    padding-top: 0em;
+    padding-right: 0em;
+    margin-right: var(--margin-right-gtsm);
+}
+
+.sec4 .top h1{
+    color: var(--primary-color);
+    font-size: 400%;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+.sec4 .box .item{
+    width: 50%;
+}
+
+.gtsm .sec4 .item h1{
+    color: var(--primary-color);
+    font-size: 350%;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    font-weight: 700; 
+}
+.gtsm .sec4 .item p{
+    color: var(--primary-color);
+    font-size: 150%;
+    line-height: 1.4; 
+    text-justify: right;
+    font-weight: 200;
+}
+
+
 
 /* side */
 .example-container {
@@ -63,17 +173,35 @@
     color: white;
 }
 
-.spetial-toolbar{
-    margin-top:2em;
-    margin-left:4em;
-    margin-right:4em;
-    color:white;
+.toolbar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 3em; /* Position the navbar at the top of the page */
+    width: 100%;
 }
+
+.gtsm .spetial-toolbar{
+    color:white;
+    margin-left: var(--margin-left-gtsm);
+    margin-right: var(--margin-right-gtsm);
+}
+
+.ltsm .spetial-toolbar{
+    color:white;
+    margin-left: var(--margin-left-ltsm);
+    margin-right: var(--margin-right-ltsm);
+}
+
+
 
 .spetial-toolbar h1{
     margin:0;
 }
 
-.spetial-toolbar .logo{
+.logo{
     height: 3em;
+}
+
+footer{
+    background-color:var(--primary-color);
 }

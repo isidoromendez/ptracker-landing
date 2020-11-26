@@ -14,97 +14,125 @@
       </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
-      <video muted autoplay loop id="myVideo">  
-        <source src="assets/videos/video.mp4" type="video/mp4" >
-      </video>
-      <!-- Toolbar -->
-      <div class="spetial-toolbar">
-        <div fxLayout="row" fxLayoutAlign="space-between center">
-            <!-- hamburguesa -->
-            <div fxShow="true" fxHide.gt-sm="true">
-              <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
-            </div>
-            <!-- logo -->
-            <img class="logo" src="./assets/img/logo.png" alt="">
-            <!-- Menu grande -->
-            <div 
-            fxLayout="row" 
-            fxLayoutAlign="space-around  center" 
-            fxFlex="0.9 0 calc(4em)"
-            class="menu">
-              <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.quienes-somos' | translate }}</a></div>
-              <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.que-hacemos' | translate }}</a></div>
-              <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.proyectos' | translate }}</a></div>
-            </div>
-            <!-- lado derecho -->
-            <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="0.2 0 10em">
-              <!-- idioma -->
-              <div>
-                <app-lang-select></app-lang-select>
-                
-              </div>
-              <!-- boton -->
-              <div>
-                <button mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
-              </div>
-            </div>
-        </div>  
-      </div>
-      
-      <!-- sec1 -->
-      <div class="sec1">
-        <div    
-        ngClass.lt-sm = "ltsm"  
-        ngClass.gt-sm = "gtsm" 
-        class="box"
-        fxLayout="row" fxLayoutAlign="center">        
-            <div
-                fxFlex="0.3 0 calc(8em)"
-                fxFlex.lt-sm="0.8 0 calc(8em)"
-                ngClass.lt-sm = "ltsm"
-                ngClass.gt-sm = "gtsm">
-                <h1>{{ 'home.sec1.title' | translate }}</h1>
-                <p>{{ 'home.sec1.text1' | translate }}</p> 
-            </div>
+      <div class="page-container" 
+      ngClass.lt-sm = "ltsm"  
+      ngClass.gt-sm = "gtsm">
+        <video muted autoplay loop id="myVideo">  
+          <source src="assets/videos/video.mp4" type="video/mp4" >
+        </video>
+        <!-- Toolbar gt-sm-->
+        <div class="toolbar">
+          <div fxShow="true" fxHide.lt-sm="true" class="spetial-toolbar">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <!-- logo -->
+                <img class="logo" src="./assets/img/logo.png" alt="">
+                <!-- Menu grande -->
+                <div 
+                fxLayout="row" 
+                fxLayoutAlign="space-around  center" 
+                fxFlex="0.9 0 calc(4em)"
+                class="menu">
+                  <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.quienes-somos' | translate }}</a></div>
+                  <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.que-hacemos' | translate }}</a></div>
+                  <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.proyectos' | translate }}</a></div>
+                </div>
+                <!-- lado derecho -->
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="0.2 0 10em">
+                  <!-- idioma -->
+                  <div>
+                    <app-lang-select></app-lang-select>
+                    
+                  </div>
+                  <!-- boton -->
+                  <div>
+                    <button mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
+                  </div>
+                </div>
+            </div>  
+          </div>
+          <!-- Toolbar lt-sm-->
+          <div fxShow="true" fxHide.gt-sm="true" class="spetial-toolbar">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <!-- hamburguesa -->
+                <div fxShow="true" fxHide.gt-sm="true">
+                  <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
+                </div>            
+                <!-- lado derecho -->
+                <div class="lado-derecho" fxLayout="row" fxLayoutAlign="space-between" fxFlex="0 0 10em">
+                  <!-- boton -->
+                  <div></div>
+                  <div>
+                    <button mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
+                  </div>
+                </div>
+            </div>  
+          </div>
         </div>
-      </div>
-      
+        <!-- sec1 -->
+        <div class="sec1">
+          <div    
+          class="box"
+          fxLayout="row" fxLayoutAlign="center">        
+              <div
+                  fxFlex="0.5 0 calc(8em)"
+                  fxFlex.lt-sm="0.8 0 calc(8em)">
+                  <h1>{{ 'home.sec1.title' | translate }}</h1>
+                  <p>{{ 'home.sec1.text1' | translate }}</p> 
+                  <button  fxShow="true" fxHide.gt-sm="true" mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
+              </div>
+          </div>
+        </div>
+        <!-- sec2 -->
+        <div class="sec2">
+          <div 
+          class="box"
+          fxLayout="row" fxLayoutAlign="center center">
+            <div class="item"><img src="./assets/img/logo-cotesma.png" alt=""></div>
+            <div class="item"><img src="./assets/img/logo-sigfox.png" alt=""></div>
+            <div class="item"><img src="./assets/img/logo-parque.png" alt=""></div>
+            <div class="item"><img src="./assets/img/logo-datco.png" alt=""></div>
+          </div>
+        </div>
+        <div class="sec3">
+          <div    
+          class="box">
+            <h1>{{ 'home.sec3.title' | translate }}</h1>
+            <p>{{ 'home.sec3.text1' | translate }}</p> 
+          </div>
+        </div>
+        <div class="sec4">
+          <div class="box top">
+            <h1 class="display-1">Proyectos</h1>
+          </div>
+          <div 
+          class="box"
+          fxLayout="row" fxLayoutAlign="space-around stretch"  fxLayoutGap="4em">
+            <div class="item">
+              <img width="100%" height="100%" src="./assets/img/proyecto-lanin-foto.png" alt="">
+            </div>
+            <div class="item" >
+              <h1>{{ 'home.sec4.title' | translate }}</h1>
+              <p>{{ 'home.sec4.text1' | translate }}</p> 
+              <button  mat-flat-button color="warn">{{ 'home.sec4.btn' | translate | uppercase }}</button>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer"
+          fxLayout="row" fxLayoutAlign="space-around stretch"  fxLayoutGap="4em">
+            <div>
+              <img class="logo" src="./assets/img/logo.png" alt="">
+            </div>
+            <div>
+              {{ 'footer.cr' | translate }}
+            </div>
+            <div>
+              <app-lang-select></app-lang-select>
+            </div>
+          </div>
+        </footer> 
+      </div>      
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
 
-<!-- <video muted autoplay loop id="myVideo">  
-    <source src="assets/videos/video.mp4" type="video/mp4" >
-</video>
-<header>
-    <div class="content">
-        <div fxLayout="row" fxLayoutAlign="space-between">
-            <div>
-            <h1>{{ 'gen.hola' | translate }}</h1>
-            </div>
-            <div dir="rtl" fxLayoutGap="0px">
-            <label>
-                {{ 'gen.hola' | translate }}
-                <select #langSelect (change)="translate.use(langSelect.value)">
-                <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-                </select>
-            </label>
-            </div>
-        </div>  
-    </div>
-</header>
-
-<div    
-ngClass.lt-sm = "ltsm"  
-ngClass.gt-sm = "gtsm" class="sec1"
-fxLayout="row"  fxLayoutGap="10px" fxLayoutAlign="space-between" fxLayoutAlign="center">        
-    <div
-        fxFlex="0.3 0 calc(8em)"
-        fxFlex.lt-sm="1ks 0 calc(8em)"
-        ngClass.md = "md"
-        ngClass.gt-md = "md">
-        <h1>{{ 'home.sec1.title' | translate }}</h1>
-        <p>{{ 'home.sec1.text1' | translate }}</p> 
-    </div>
-</div>
-<footer></footer> -->
