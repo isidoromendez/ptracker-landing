@@ -161,7 +161,16 @@
     font-weight: 200;
 }
 
-
+/* sec5 */
+.sec5{
+    padding-top: 3em;
+    background-image: url("../../../../assets/img/bg-contacto.png"); /* The image used */
+    background-color: white; /* Used if the image is unavailable */
+    height: 800px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 /* side */
 .example-container {
@@ -203,5 +212,52 @@
 }
 
 footer{
+    color: white;
     background-color:var(--primary-color);
+    padding-left: var(--margin-left-gtsm);
+    padding-right: var(--margin-right-gtsm);    
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
+
+footer .redes{
+    height: 100%;
+}
+
+footer .redes .item{
+    border: 0px solid;
+    background-color: width; 
+    height: 28px;
+    width: 28px;
+    border-radius: 5px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+footer .redes .item.fb{
+    background-image: url("../../../../assets/img/fb.png"); 
+}
+
+footer .redes .item.ig{
+    background-image: url("../../../../assets/img/ig.png"); 
+}
+
+footer .redes .item.tw{
+    background-image: url("../../../../assets/img/tw.png"); 
+}
+
+footer hr {
+    height:1px;
+    border-width:0;
+    background-color:var(--primary-lighter-color);
+}
+
+footer .footer{
+    padding-top: 1em;
+}
+
+footer .footer-info{
+    padding-bottom: 1em;
+    
 }

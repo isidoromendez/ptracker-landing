@@ -20,8 +20,15 @@
       "btn":"More info"
     }    
   },
+  "contact-form":{
+    "nombre":"(T) Nombre y apellido",
+    "email":"(T) Email",
+    "mensaje":"(T) Mensaje",
+    "enviar":"(T) ¡Enviar Mensaje!"
+  },
   "footer":{
-    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados"
+    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
+    "pp":"(T) Políticas de privacidad"
   },
   "gen":{
     "hola":"Hi",

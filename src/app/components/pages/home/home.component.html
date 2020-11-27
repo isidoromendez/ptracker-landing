@@ -100,6 +100,7 @@
             <p>{{ 'home.sec3.text1' | translate }}</p> 
           </div>
         </div>
+        <!-- proyectos -->
         <div class="sec4">
           <div class="box top">
             <h1 class="display-1">Proyectos</h1>
@@ -117,9 +118,70 @@
             </div>
           </div>
         </div>
+        <!-- contacto-->
+        <div class="sec5">
+          <div 
+          class="box"
+          fxLayout="row" fxLayoutAlign="space-around stretch">
+            <div fxFlex="33%"></div>
+            <div fxFlex="66%" style="border:1px solid black">
+              <div><h1 class="display-1">Contáctanos</h1></div>
+              <div class="contact-form">
+                <div class="contact-container" fxLayout="column" fxLayoutAlign="space-between stretch" >
+                  <div>
+                    <mat-form-field appearance="fill" fxFlex="100%">
+                      <mat-label>{{ 'contact-form.nombre' | translate }}</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div>
+                    <mat-form-field appearance="fill" fxFlex="100%">
+                      <mat-label>{{ 'contact-form.email' | translate }}</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div>
+                    <mat-form-field appearance="fill" fxFlex="100%">
+                      <mat-label>{{ 'contact-form.mensaje' | translate }}</mat-label>
+                      <textarea  cdkTextareaAutosize
+                      cdkAutosizeMinRows="1"
+                      cdkAutosizeMaxRows="5"  matInput placeholder=""></textarea>
+                    </mat-form-field>
+                  </div>
+                  <div fxFlexAlign="end">
+                    <button mat-flat-button color="warn">{{ 'contact-form.enviar' | translate | uppercase }}</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <footer>
+          <div class="footer-info" fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="1em">
+            <div fxFlex="33%"></div>
+            <div fxFlex="33%" class="menu">
+              <!-- Menu grande -->
+              <div 
+              fxLayout="column" 
+              fxLayoutAlign="space-around  center" 
+              fxFlex="0.9 0 calc(4em)"
+              class="menu">
+                <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.quienes-somos' | translate }}</a></div>
+                <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.que-hacemos' | translate }}</a></div>
+                <div class="mnu-item"><a mat-button href="#">{{ 'footer.pp' | translate }}</a></div>
+              </div>
+            </div>
+            <div fxFlex="33%">
+              <div class="redes" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1em">
+                <a href="http://cotesma.coop" target="_blank"><div class="item fb"></div></a>
+                <a href="http://cotesma.coop" target="_blank"><div class="item ig"></div></a>
+                <a href="http://cotesma.coop" target="_blank"><div class="item tw"></div></a>
+              </div>
+            </div>
+          </div>
+          <hr>
           <div class="footer"
-          fxLayout="row" fxLayoutAlign="space-around stretch"  fxLayoutGap="4em">
+          fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="4em">
             <div>
               <img class="logo" src="./assets/img/logo.png" alt="">
             </div>
