@@ -15,12 +15,16 @@
       "text1":"(T) Somos una división tecnológica de Cotesma. Nuestra finalidad es brindar servicios de alto valor agregado relacionados con el mundo de las telecomunicaciones que puedan ser implementados en distintos escenarios geográficos y países."
     },
     "sec4":{
-      "title":"(T) Experiencia Volcán Lanín",
-      "text1":"(T) Te acompañamos en tu aventura para que sea segura e inolvidable.",
-      "btn":"More info"
-    }    
+      "title":"Proyects",
+      "p1":{
+        "title":"(T) Experiencia Volcán Lanín",
+        "text1":"(T) Te acompañamos en tu aventura para que sea segura e inolvidable.",
+        "btn":"More info"
+      }
+    }
   },
   "contact-form":{
+    "title":"(T) Contáctanos",
     "nombre":"(T) Nombre y apellido",
     "email":"(T) Email",
     "mensaje":"(T) Mensaje",
@@ -28,7 +32,11 @@
   },
   "footer":{
     "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
-    "pp":"(T) Políticas de privacidad"
+    "pp":"(T) Políticas de privacidad",
+    "tel":"(02972) 427000",
+    "dir":"Capitán Drury 761",
+    "loc":"San Martín de los Andes",
+    "cp":"(CP8370) Neuquen"
   },
   "gen":{
     "hola":"Hi",

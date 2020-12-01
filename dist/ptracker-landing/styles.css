@@ -3708,6 +3708,21 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .material-icons .mat-badge-content {
   font-family: "Open Sans";
 }
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: white !important;
+  border-radius: 6px !important;
+}
+.mat-focused .mat-form-field-label {
+  /*change color of label*/
+}
+.mat-form-field-underline {
+  /*change color of underline*/
+  display: none;
+}
+.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #033270 !important;
+}
 /* You can add global styles to this file, and also import other style files */
 /* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 

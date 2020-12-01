@@ -245,3 +245,25 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
     font-family: 'Open Sans';
   }
 }
+
+
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: white !important;
+  border-radius: 6px !important;
+}
+
+.mat-focused .mat-form-field-label {
+  /*change color of label*/
+  
+ }
+
+ .mat-form-field-underline {
+  /*change color of underline*/
+  display: none;
+} 
+
+.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #033270 !important;;
+ }

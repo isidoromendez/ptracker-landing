@@ -34,6 +34,13 @@
     margin-bottom: 15em;
 }
 
+.sec1 a.anchor {
+    display: block;
+    position: relative;
+    top: -20em;
+    visibility: hidden;
+}
+
 .gtsm .sec1 .box{   
     
 }
@@ -87,6 +94,13 @@
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+.sec3 a.anchor {
+    display: block;
+    position: relative;
+    top: -5em;
+    visibility: hidden;
+}
+
 .ltsm .sec3 .box{
     margin-left: var(--margin-left-ltsm);
     margin-right: var(--margin-right-ltsm);
@@ -95,7 +109,7 @@
 .gtsm .sec3 .box{
     padding-left: 42em;
     margin-left: var(--margin-left-gtsm);
-    padding-top: 6em;
+    padding-top: 12em;
     padding-right: 9em;
     margin-right: var(--margin-right-gtsm);
     text-align: right;
@@ -125,6 +139,13 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.sec4 a.anchor {
+    display: block;
+    position: relative;
+    top: -10em;
+    visibility: hidden;
 }
 
 .gtsm .sec4 .box{
@@ -172,6 +193,31 @@
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+.sec5 a.anchor {
+    display: block;
+    position: relative;
+    top: -3em;
+    visibility: hidden;
+}
+
+.gtsm .sec5 .box{
+    padding-left: 0;
+    margin-left: var(--margin-left-gtsm);
+    padding-top: 9em;
+    padding-right: 0em;
+    margin-right: var(--margin-right-gtsm);
+    
+}
+
+.sec5 .top h1{
+    color: var(--primary-color);
+    text-align: right;
+    font-size: 400%;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+
 /* side */
 .example-container {
     width: 100%;
@@ -182,23 +228,39 @@
     color: white;
 }
 
+
+
 .toolbar{
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
-    top: 3em; /* Position the navbar at the top of the page */
+    top: 0em; /* Position the navbar at the top of the page */
+    padding-bottom: 1em;
     width: 100%;
+    z-index: 99999;
+}
+
+
+.toolbar .menu{
+    margin-left: 4em;
 }
 
 .gtsm .spetial-toolbar{
-    color:white;
-    margin-left: var(--margin-left-gtsm);
-    margin-right: var(--margin-right-gtsm);
+    color: white;
+    padding-left: var(--margin-left-gtsm);
+    padding-right: var(--margin-right-gtsm);
+    background-color: var(--primary-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
+
 .ltsm .spetial-toolbar{
-    color:white;
-    margin-left: var(--margin-left-ltsm);
-    margin-right: var(--margin-right-ltsm);
+    color: white;
+    padding-left: var(--margin-left-gtsm);
+    padding-right: var(--margin-right-gtsm);
+    background-color: var(--primary-color);
+    padding-top: 3em;
+    padding-bottom: 2em;
 }
 
 
@@ -218,6 +280,28 @@ footer{
     padding-right: var(--margin-right-gtsm);    
     padding-top: 10em;
     padding-bottom: 5em;
+}
+
+footer .ico{
+    position: absolute;
+}
+
+footer .icotext{
+    padding-left:2.5em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color: white;
 }
 
 footer .redes{

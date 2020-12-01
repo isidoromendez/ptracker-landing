@@ -29,15 +29,15 @@
                 <!-- Menu grande -->
                 <div 
                 fxLayout="row" 
-                fxLayoutAlign="space-around  center" 
+                fxLayoutAlign="start  center" 
                 fxFlex="0.9 0 calc(4em)"
                 class="menu">
-                  <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.quienes-somos' | translate }}</a></div>
-                  <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.que-hacemos' | translate }}</a></div>
-                  <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.proyectos' | translate }}</a></div>
+                  <div class="mnu-item"><a mat-button href="#asec1">{{ 'home.nav.quienes-somos' | translate }}</a></div>
+                  <div class="mnu-item"><a mat-button href="#asec3">{{ 'home.nav.que-hacemos' | translate }}</a></div>
+                  <div class="mnu-item"><a mat-button href="#asec4">{{ 'home.nav.proyectos' | translate }}</a></div>
                 </div>
                 <!-- lado derecho -->
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="0.2 0 10em">
+                <div class="right" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="1em" fxFlex="0.2 0 10em">
                   <!-- idioma -->
                   <div>
                     <app-lang-select></app-lang-select>
@@ -45,7 +45,7 @@
                   </div>
                   <!-- boton -->
                   <div>
-                    <button mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
+                    <a mat-flat-button color="warn" href="#asec5">{{ 'home.nav.contactarme' | translate | uppercase }}</a>
                   </div>
                 </div>
             </div>  
@@ -70,6 +70,7 @@
         </div>
         <!-- sec1 -->
         <div class="sec1">
+          <a class="anchor" id="asec1"></a>
           <div    
           class="box"
           fxLayout="row" fxLayoutAlign="center">        
@@ -83,7 +84,7 @@
           </div>
         </div>
         <!-- sec2 -->
-        <div class="sec2">
+        <div id="sec2" class="sec2">
           <div 
           class="box"
           fxLayout="row" fxLayoutAlign="center center">
@@ -93,7 +94,8 @@
             <div class="item"><img src="./assets/img/logo-datco.png" alt=""></div>
           </div>
         </div>
-        <div class="sec3">
+        <div id="sec3" class="sec3">
+          <a class="anchor" id="asec3"></a>
           <div    
           class="box">
             <h1>{{ 'home.sec3.title' | translate }}</h1>
@@ -101,9 +103,10 @@
           </div>
         </div>
         <!-- proyectos -->
-        <div class="sec4">
+        <div id="sec4" class="sec4">
+          <a class="anchor" id="asec4"></a>
           <div class="box top">
-            <h1 class="display-1">Proyectos</h1>
+            <h1 class="display-1">{{ 'home.sec4.title' | translate }}</h1>
           </div>
           <div 
           class="box"
@@ -112,20 +115,21 @@
               <img width="100%" height="100%" src="./assets/img/proyecto-lanin-foto.png" alt="">
             </div>
             <div class="item" >
-              <h1>{{ 'home.sec4.title' | translate }}</h1>
-              <p>{{ 'home.sec4.text1' | translate }}</p> 
-              <button  mat-flat-button color="warn">{{ 'home.sec4.btn' | translate | uppercase }}</button>
+              <h1>{{ 'home.sec4.p1.title' | translate }}</h1>
+              <p>{{ 'home.sec4.p1.text1' | translate }}</p> 
+              <button  mat-flat-button color="warn">{{ 'home.sec4.p1.btn' | translate | uppercase }}</button>
             </div>
           </div>
         </div>
         <!-- contacto-->
-        <div class="sec5">
+        <div id="sec5" class="sec5">
+          <a class="anchor" id="asec5"></a>
           <div 
           class="box"
           fxLayout="row" fxLayoutAlign="space-around stretch">
             <div fxFlex="33%"></div>
-            <div fxFlex="66%" style="border:1px solid black">
-              <div><h1 class="display-1">Contáctanos</h1></div>
+            <div fxFlex="66%">
+              <div class="top"><h1 class="display-1">{{ 'contact-form.title' | translate }}</h1></div>
               <div class="contact-form">
                 <div class="contact-container" fxLayout="column" fxLayoutAlign="space-between stretch" >
                   <div>
@@ -144,8 +148,8 @@
                     <mat-form-field appearance="fill" fxFlex="100%">
                       <mat-label>{{ 'contact-form.mensaje' | translate }}</mat-label>
                       <textarea  cdkTextareaAutosize
-                      cdkAutosizeMinRows="1"
-                      cdkAutosizeMaxRows="5"  matInput placeholder=""></textarea>
+                      cdkAutosizeMinRows="5"
+                      cdkAutosizeMaxRows="15"  matInput placeholder=""></textarea>
                     </mat-form-field>
                   </div>
                   <div fxFlexAlign="end">
@@ -157,8 +161,32 @@
           </div>
         </div>
         <footer>
+          <div>
+            <h2>Contacto</h2>
+          </div>
           <div class="footer-info" fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="1em">
-            <div fxFlex="33%"></div>
+            <div fxFlex="33%">
+              <div 
+              fxLayout="column" 
+              fxLayoutAlign="space-around  center" 
+              fxFlex="0.9 0 calc(4em)"
+              class="menu">
+                <div>
+                  <mat-icon class="ico" aria-hidden="false" aria-label="Example home icon">call</mat-icon>
+                  <div class="icotext">{{ 'footer.tel' | translate }}</div>
+                </div>
+                <div>
+                  <mat-icon class="ico" aria-hidden="false" aria-label="Example home icon">location_on</mat-icon>
+                  <div class="icotext">{{ 'footer.dir' | translate }}</div>
+                </div>
+                <div>
+                  <div class="icotext">{{ 'footer.loc' | translate }}</div>
+                </div>
+                <div>
+                  <div class="icotext">{{ 'footer.cp' | translate }}</div>
+                </div>
+              </div>
+            </div>
             <div fxFlex="33%" class="menu">
               <!-- Menu grande -->
               <div 
@@ -166,9 +194,10 @@
               fxLayoutAlign="space-around  center" 
               fxFlex="0.9 0 calc(4em)"
               class="menu">
-                <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.quienes-somos' | translate }}</a></div>
-                <div class="mnu-item"><a mat-button href="#">{{ 'home.nav.que-hacemos' | translate }}</a></div>
-                <div class="mnu-item"><a mat-button href="#">{{ 'footer.pp' | translate }}</a></div>
+                <div class="mnu-item"><a href="#asec1">{{ 'home.nav.quienes-somos' | translate }}</a></div>
+                <div class="mnu-item"><a href="#asec3">{{ 'home.nav.que-hacemos' | translate }}</a></div>
+                <div class="mnu-item"><a href="#asec4">{{ 'footer.pp' | translate }}</a></div>
+                <div class="mnu-item"></div> 
               </div>
             </div>
             <div fxFlex="33%">
