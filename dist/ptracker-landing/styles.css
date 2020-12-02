@@ -3742,5 +3742,8 @@ body {
 .mat-flat-button.mat-warn {
   color: white;
 }
+.line-breaker {
+  white-space: pre-wrap;
+}
 
 /*# sourceMappingURL=styles.css.map*/

@@ -7,7 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./lang-select.component.scss']
 })
 export class LangSelectComponent implements OnInit {
-
+  public langs:any[] = [
+    {"lang":"es","desc":"esp"},
+    {"lang":"en","desc":"eng"}
+  ];
   constructor(public translate: TranslateService) {}
 
   public get lang() : string {

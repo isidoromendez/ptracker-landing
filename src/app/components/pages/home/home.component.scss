@@ -66,8 +66,8 @@
 /* sec2 */
 .sec2{
     background-color: white;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .ltsm .sec2 .box{
@@ -80,13 +80,15 @@
     margin-right: var(--margin-right-gtsm);
 }
 
-.sec2 .box .item{
-    
+.sec2 .box .item img{
+    max-height: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* sec3 */
 .sec3{
-    background-image: url("../../../../assets/img/bg-soluciones.jpg"); /* The image used */
+    background-image: url("../../../../assets/img/bg-soluciones.png"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 700px; /* You must set a specified height */
     background-position: center; /* Center the image */
@@ -284,10 +286,12 @@ footer{
 
 footer .ico{
     position: absolute;
+    font-size: 17px;
+    margin-top: 3px;
 }
 
 footer .icotext{
-    padding-left:2.5em;
+    padding-left:1.8em;
 }
 
 footer a{
@@ -344,4 +348,8 @@ footer .footer{
 footer .footer-info{
     padding-bottom: 1em;
     
+}
+
+footer .footer-info .line{
+    padding-bottom: 1em;
 }

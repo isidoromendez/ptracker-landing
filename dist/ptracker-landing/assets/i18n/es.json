@@ -17,8 +17,8 @@
     "sec4":{
       "title":"Proyectos",
       "p1":{
-        "title":"Experiencia Volcán Lanín",
-        "text1":"Te acompañamos en tu aventura para que sea segura e inolvidable.",
+        "title":"Experiencia \nVolcán Lanín",
+        "text1":"Te acompañamos en tu aventura\npara que sea segura e inolvidable.",
         "btn":"Más info"
       }
     }
@@ -29,6 +29,10 @@
     "email":"Email",
     "mensaje":"Mensaje",
     "enviar":"¡Enviar Mensaje!"
+  },
+  "lang-select":{
+    "en":"Inglés",
+    "es":"Español"
   },
   "footer":{
     "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
