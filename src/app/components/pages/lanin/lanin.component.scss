@@ -1,0 +1,345 @@
+/* Style the video: 100% width and height to cover the entire window */
+
+.page-container{
+    padding-top:0em;
+}
+
+.page-container.ltsm{
+    padding-top:0em;    
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+  
+/* Add some content at the bottom of the video/page */
+.content {
+    /* position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: #f1f1f1;
+    width: 98%;
+    padding: 1%; */
+    
+}
+.sec1{
+    color: #f1f1f1;
+    //text-align: center;
+    padding-top: 15em;
+    padding-bottom: 15em;
+}
+
+.sec1 a.anchor {
+    display: block;
+    position: relative;
+    top: -20em;
+    visibility: hidden;
+}
+
+.gtsm .sec1 .box{   
+    margin-left: var(--margin-left-gtsm);
+    margin-right: var(--margin-right-gtsm);
+}
+
+.ltsm .sec1 .box{   
+    
+}
+
+/* sec0 */
+.bg-lanin{
+    background-image: url("../../../../assets/img/lanin/bg-lanin.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+.gtsm .sec1 .box h1{
+    font-size: 400%;
+    margin-bottom: 0.5em;
+    font-weight: 700; 
+    line-height: 1.2;
+}
+.gtsm .sec1 .box p{
+    font-size: 127%;
+    line-height: 1.5; 
+    
+}
+
+/* sec2 */
+.sec2{
+    background-color: white;
+    color:#55665B;
+}
+
+.ltsm .sec2 .box{
+    margin-left: var(--margin-left-ltsm);
+    margin-right: var(--margin-right-ltsm);
+}
+
+.gtsm .sec2 .box{
+    margin-left: var(--margin-left-gtsm);
+    margin-right: var(--margin-right-gtsm);
+}
+
+.sec2 .box .item.l1 img{
+    max-width: 43em;
+    margin-right: 3em;
+}
+
+.sec2 .box .item.l2 img{
+    max-width: 21em;
+    margin-right: 16em;
+}
+
+.sec2 .box .item h1{
+    font-weight: 300;
+    font-size: 304%;
+    line-height: 1.4;
+}
+
+.sec2 .box .item2 img{
+    max-width: 53em;
+}
+
+.sec2 .box .item4 h1{
+    text-align: right;
+    font-weight: 300;
+    font-size: 304%;
+    line-height: 1.4;
+}
+
+.sec2 .box .item4 .c-title{
+    font-weight: 300;
+    font-size: 304%;
+    text-align: left;
+    line-height: 1.4;
+    position: relative;
+    top: -4em;
+    left: -3em;
+}
+.sec2 .box .item4 p{
+    text-align: right;
+}
+.sec2 .box .item4 img{
+    max-width: 45em;
+    margin-right: 1em;
+    left: -3em;
+}
+
+/* sec4 */
+.sec4{
+    color:#55665B;
+    padding-top: 9em;
+    background-image: url("../../../../assets/img/bg-proy-lanin.png"); /* The image used */
+    background-color: #F7F7F7; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.sec4 a.anchor {
+    display: block;
+    position: relative;
+    top: -10em;
+    visibility: hidden;
+}
+
+.gtsm .sec4 .box{
+    padding-left: 0;
+    margin-left: var(--margin-left-gtsm);
+    padding-top: 0em;
+    padding-right: 0em;
+    margin-right: var(--margin-right-gtsm);
+}
+
+.sec4 .box h1{
+    font-size: 400%;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+.sec4 .box img{
+    width:40em;
+}
+
+
+/* sec5 */
+.sec5{
+    color:#55665B;
+    background-color: white; 
+    padding-bottom: 5em;
+}
+
+.sec5 a.anchor {
+    display: block;
+    position: relative;
+    top: -3em;
+    visibility: hidden;
+}
+
+.sec5 .box{
+    padding-top: 3em;
+    margin-right: var(--margin-right-gtsm);
+    margin-left: var(--margin-left-gtsm);
+}
+
+.sec5 .box h1{
+    font-size: 400%;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+.mat-expanded .mat-expansion-panel-header-title{
+    color:#7FAEDB;
+    font-weight: 700;
+} 
+
+.mat-expansion-panel-header-title{
+    color:#3B3B3B;
+    font-weight: 700;
+} 
+
+/* side */
+.example-container {
+    width: 100%;
+    height: auto;
+}
+
+.white-icon {
+    color: white;
+}
+
+.toolbar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0em; /* Position the navbar at the top of the page */
+    padding-bottom: 1em;
+    width: 100%;
+    z-index: 99999;
+}
+
+.toolbar.fondo{
+    background-color: #C1D4EE;
+}
+
+.toolbar .menu{
+    margin-left: 4em;
+}
+
+.gtsm .spetial-toolbar{
+    color: white;
+    padding-left: var(--margin-left-gtsm);
+    padding-right: var(--margin-right-gtsm);
+    //background-color: var(--primary-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+.ltsm .spetial-toolbar{
+    color: white;
+    padding-left: var(--margin-left-gtsm);
+    padding-right: var(--margin-right-gtsm);
+    background-color: var(--primary-color);
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+
+
+.spetial-toolbar h1{
+    margin:0;
+}
+
+.logo{
+    height: 3em;
+}
+
+footer{
+    color: #0D0101;
+    background-color:#C1D4EE;
+    padding-left: var(--margin-left-gtsm);
+    padding-right: var(--margin-right-gtsm);    
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
+
+footer .ico{
+    position: absolute;
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+footer .icotext{
+    padding-left:1.8em;
+}
+
+footer a{
+    color: #0D0101;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #0D0101;
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color: #0D0101;
+}
+
+footer .redes{
+    height: 100%;
+}
+
+footer .redes .item{
+    border: 0px solid;
+    background-color: width; 
+    height: 28px;
+    width: 28px;
+    border-radius: 5px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+footer .redes .item.fb{
+    background-image: url("../../../../assets/img/lanin/fb.png"); 
+}
+
+footer .redes .item.ig{
+    background-image: url("../../../../assets/img/lanin/ig.png"); 
+}
+
+footer .redes .item.tw{
+    background-image: url("../../../../assets/img/lanin/tw.png"); 
+}
+
+footer hr {
+    height:1px;
+    border-width:0;
+    background-color:var(--primary-lighter-color);
+}
+
+footer .footer{
+    padding-top: 1em;
+}
+
+footer .footer-info{
+    padding-bottom: 1em;
+    
+}
+
+footer .footer-info .line{
+    padding-bottom: 1em;
+}

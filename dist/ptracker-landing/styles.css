@@ -3745,5 +3745,36 @@ body {
 .line-breaker {
   white-space: pre-wrap;
 }
+.lanin select {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+.lanin footer select {
+  background: transparent;
+  color: #0D0101;
+  border-color: #0D0101;
+}
+.lanin footer select option {
+  background-color: white;
+  color: #0D0101;
+}
+.lanin select option {
+  background-color: white;
+  color: #3B3B3B;
+}
+.lanin .mat-flat-button.mat-warn {
+  color: #3B3B3B;
+  background-color: white;
+}
+.home select {
+  background: var(--primary-color);
+  color: white;
+  border-color: white;
+}
+.home select option {
+  background-color: var(--primary-color);
+  color: white;
+}
 
 /*# sourceMappingURL=styles.css.map*/

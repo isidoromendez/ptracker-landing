@@ -1,0 +1,256 @@
+<div class="lanin" style="height: 100vh;">
+    <!-- toolbar -->
+    <div class="content">
+    <mat-sidenav-container fxFlexFill class="example-container">
+      <mat-sidenav #sidenav fxLayout="column">
+        <div fxLayout="column">
+          <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+          <a href="#" mat-button>Menu Item 1</a>
+          <a href="#" mat-button>Menu Item 2</a>
+          <a href="#" mat-button>Menu Item 3</a>
+          <a href="#" mat-button>Menu Item 4</a>
+          <a href="#" mat-button>Menu Item 5</a>
+          <a href="#" mat-button>Menu Item 6</a>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <div class="page-container" 
+        ngClass.lt-sm = "ltsm"  
+        ngClass.gt-sm = "gtsm">
+            <div class="bg-lanin">
+                <!-- Toolbar gt-sm-->
+                <div class="toolbar {{toolbarClass}}" >
+                    <div fxShow="true" fxHide.lt-sm="true" class="spetial-toolbar">
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <!-- logo -->
+                        <img class="logo" src="./assets/img/logo.png" alt="">
+                        <!-- Menu grande -->
+                        <div 
+                        fxLayout="row" 
+                        fxLayoutAlign="start  center" 
+                        fxFlex="0.9 0 calc(4em)"
+                        class="menu">
+                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.propuesta' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.como-funciona' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.precio' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.faq' | translate }}</a></div>
+                        </div>
+                        <!-- lado derecho -->
+                        <div class="right" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="1em" fxFlex="0.2 0 10em">
+                            <!-- idioma -->
+                            <div>
+                            <app-lang-select></app-lang-select>
+                            
+                            </div>
+                            <!-- boton -->
+                            <div>
+                            <a mat-flat-button color="warn" href="#asec5">{{ 'home.nav.contactarme' | translate | uppercase }}</a>
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
+                    <!-- Toolbar lt-sm-->
+                    <div fxShow="true" fxHide.gt-sm="true" class="spetial-toolbar">
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <!-- hamburguesa -->
+                        <div fxShow="true" fxHide.gt-sm="true">
+                            <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
+                        </div>            
+                        <!-- lado derecho -->
+                        <div class="lado-derecho" fxLayout="row" fxLayoutAlign="space-between" fxFlex="0 0 10em">
+                            <!-- boton -->
+                            <div></div>
+                            <div>
+                            <button mat-flat-button color="warn">{{ 'home.nav.contactarme' | translate | uppercase }}</button>
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
+                </div>
+                <!-- sec1 -->
+                <div class="sec1">
+                    <a class="anchor" id="asec1"></a>
+                    <div    
+                    class="box"
+                    fxLayout="row" fxLayoutAlign="space-between center" >        
+                        <div
+                            fxFlex="33%"
+                            fxFlex.lt-sm="0.8 0 calc(8em)">
+                            <h1 class="line-breaker">{{ 'lanin.sec1.title' | translate }}</h1>
+                            <p class="line-breaker">{{ 'lanin.sec1.text1' | translate }}</p> 
+                            <button  mat-flat-button color="warn">{{ 'lanin.sec1.btn' | translate | uppercase }}</button>
+                        </div>
+                        <div
+                            fxFlex=50%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- sec2 -->
+          <div id="sec2" class="sec2">
+            <div 
+            class="box"
+            fxLayout="column" fxLayoutAlign="start center">
+              <div class="item item1 l1"><img src="./assets/img/lanin/l1.png" alt=""></div>
+              <div class="item item2">       
+                <h1 class="line-breaker">{{ 'lanin.sec2.a.title' | translate }}</h1>         
+                <img src="./assets/img/lanin/sec2.png" alt="">
+              </div>
+              <div class="item item3 l2"><img src="./assets/img/lanin/l2.png" alt=""></div>
+              <div class="item item4">
+                  <h1 class="line-breaker">{{ 'lanin.sec2.b.title' | translate }}</h1>
+                  <p class="line-breaker">{{ 'lanin.sec2.b.text' | translate }}</p>
+                  <img src="./assets/img/lanin/sec2b.png" alt="">
+                  <h1 class="c-title line-breaker">{{ 'lanin.sec2.c.title' | translate }}</h1>
+              </div>              
+            </div>
+          </div>
+          <!-- precio -->
+          <div id="sec4" class="sec4">
+            <a class="anchor" id="asec4"></a>
+            <div class="box" fxLayout="column" fxLayoutAlign="start center">
+              <h1 class="display-1">{{ 'lanin.sec4.title' | translate }}</h1>  
+              <img src="./assets/img/lanin/precio.png" alt="">            
+            </div>
+          </div>
+          <!-- faq -->
+          <div id="sec5" class="sec5">
+            <a class="anchor" id="asec5"></a>
+            <div class="box">
+                <div  fxLayout="column" fxLayoutAlign="start center">
+                    <h1 class="line-breaker">{{ 'lanin.sec5.title' | translate }}</h1>
+                </div>
+                <div fxLayout="row" fxLayoutGap="5em" fxLayoutAlign="space-between start" >
+                    <div fxFlex="50%">
+                        <div fxLayout="column" fxLayoutGap="2em" fxLayoutAlign="start center" >
+                            <mat-expansion-panel [expanded]="true" (opened)="panelOpenState1 = true"
+                                    (closed)="panelOpenState1 = false">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        {{ 'lanin.sec5.faq.1.Q' | translate }}
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>{{ 'lanin.sec5.faq.1.A' | translate }}</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (opened)="panelOpenState2 = true"
+                                        (closed)="panelOpenState2 = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    {{ 'lanin.sec5.faq.2.Q' | translate }}
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>{{ 'lanin.sec5.faq.2.A' | translate }}</p>
+                            </mat-expansion-panel>
+                        </div>
+                    </div>
+                    <div fxFlex="50%">
+                        <div fxLayout="column" fxLayoutGap="2em" fxLayoutAlign="start center" >
+                            <mat-expansion-panel (opened)="panelOpenState3 = true"
+                                    (closed)="panelOpenState3 = false">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                        {{ 'lanin.sec5.faq.1.Q' | translate }}
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>{{ 'lanin.sec5.faq.1.A' | translate }}</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (opened)="panelOpenState4 = true"
+                                        (closed)="panelOpenState4 = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    {{ 'lanin.sec5.faq.2.Q' | translate }}
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>{{ 'lanin.sec5.faq.2.A' | translate }}</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (opened)="panelOpenState4 = true"
+                                        (closed)="panelOpenState4 = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    {{ 'lanin.sec5.faq.2.Q' | translate }}
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>{{ 'lanin.sec5.faq.2.A' | translate }}</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (opened)="panelOpenState5 = true"
+                                        (closed)="panelOpenState5 = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    {{ 'lanin.sec5.faq.2.Q' | translate }}
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>{{ 'lanin.sec5.faq.2.A' | translate }}</p>
+                            </mat-expansion-panel>
+                        </div>
+                    </div>
+                </div>  
+            </div>          
+          </div>
+          <footer>
+            <div>
+              <h2>Contacto</h2>
+            </div>
+            <div class="footer-info" fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="1em">
+              <div fxFlex="33%">
+                <div 
+                fxLayout="column" 
+                fxLayoutAlign="space-around  center" 
+                fxFlex="0.9 0 calc(4em)"
+                class="menu">
+                  <div class="line">
+                    <mat-icon class="ico" aria-hidden="false" aria-label="Example home icon">call</mat-icon>
+                    <div class="icotext">{{ 'footer.tel' | translate }}</div>
+                  </div>
+                  <div class="line">
+                    <mat-icon class="ico" aria-hidden="false" aria-label="Example home icon">location_on</mat-icon>
+                    <div class="icotext">{{ 'footer.dir' | translate }}</div>
+                  </div>
+                  <div class="line">
+                    <div class="icotext">{{ 'footer.loc' | translate }}</div>
+                  </div>
+                  <div class="line">
+                    <div class="icotext">{{ 'footer.cp' | translate }}</div>
+                  </div>
+                </div>
+              </div>
+              <div fxFlex="33%" class="menu">
+                <!-- Menu grande -->
+                <div 
+                fxLayout="column" 
+                fxLayoutAlign="space-around  center" 
+                fxFlex="0.9 0 calc(4em)"
+                class="menu">
+                  <div class="mnu-item line"><a href="#asec4">{{ 'footer.pp' | translate }}</a></div>
+                  <div class="mnu-item line"></div>
+                  <div class="mnu-item line"></div>
+                  <div class="mnu-item line"></div> 
+                </div>
+              </div>
+              <div fxFlex="33%">
+                <div class="redes" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1em">
+                  <a href="http://cotesma.coop" target="_blank"><div class="item fb"></div></a>
+                  <a href="http://cotesma.coop" target="_blank"><div class="item ig"></div></a>
+                  <a href="http://cotesma.coop" target="_blank"><div class="item tw"></div></a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="footer"
+            fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="4em">
+              <div>
+                <img class="logo" src="./assets/img/lanin/logo-negro.png" alt="">
+              </div>
+              <div>
+                {{ 'footer.cr' | translate }}
+              </div>
+              <div>
+                <app-lang-select></app-lang-select>
+              </div>
+            </div>
+          </footer> 
+        </div>      
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  
+  

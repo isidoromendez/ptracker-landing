@@ -15,12 +15,7 @@ export class HomeComponent implements OnInit {
 
   
   ngOnInit(): void {
-    this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('es');
-
-    const browserLang = this.translate.getBrowserLang();
-    console.debug('browserLang',browserLang);
-    this.translate.use(browserLang.match(/en|es/) ? browserLang : 'es');
+    
 
     let video:any = document.getElementById("myVideo"); 
     video.muted=true;

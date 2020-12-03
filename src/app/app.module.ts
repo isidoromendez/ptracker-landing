@@ -20,7 +20,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { LangSelectComponent } from './components/pieces/lang-select/lang-select.component';
+import { LaninComponent } from './components/pages/lanin/lanin.component';
 
 
 // AoT requires an exported function for factories
@@ -33,7 +35,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    LangSelectComponent
+    LangSelectComponent,
+    LaninComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatButtonModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

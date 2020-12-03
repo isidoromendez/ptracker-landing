@@ -8,7 +8,7 @@
     outline: 0;
     box-shadow: none;
     border: 0 !important;
-    background: var(--primary-color);
+    //background: var(--primary-color);
     background-image: none;
   }
   /* Remove IE arrow */
@@ -26,13 +26,13 @@
     overflow: hidden;
     border-radius: 0.5em;
     border-width: 2px;
-    border-color: white;
+    
     border-style: solid;
   }
   select {
     flex: 1;
     padding: 0 .5em;
-    color: #fff;
+    
     cursor: pointer;
   }
   /* Arrow */
@@ -53,4 +53,5 @@
   .select:hover::after {
     color: white;
   }
+  
   

@@ -23,6 +23,47 @@
       }
     }
   },
+  "lanin": {
+    "nav": {
+      "propuesta":"(T) Propuesta de valor",
+      "como-funciona":"(T) ¿Cómo funciona?",
+      "precio": "(T) Precio",
+      "faq":"Faq"
+    },
+    "sec1":{
+      "title":"(T) Experiencia\nVolcán Lanín ",
+      "text1":"(T) Te acompañamos en tu aventura\npara que sea segura e inolvidable.",
+      "btn":"(T) Suscribirme"
+    },
+    "sec2":{
+      "a":{
+        "title":"(T) Una plataforma para\nplanificar tu aventura"
+      },
+      "b":{
+        "title":"(T) La señal que vuelve\nsegura tu experiencia",
+        "text":"(T) Visualizamos todo tu recorrido y nos\nmantendremos alerta. En caso de que\nnecesites ayuda, simplemente nos das\naviso con el botón del dispositivo."
+      },
+      "c":{
+        "title":"Conexión a internet\nen refugio y base."
+      }
+    },
+    "sec4":{
+      "title":"(T) Precio"
+    },
+    "sec5":{
+      "title":"(T) Preguntas frecuentes",
+      "faq":{
+        "1":{
+          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
+          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+        },
+        "2":{
+          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
+          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+        }
+      }
+    }
+  },
   "contact-form":{
     "title":"(T) Contáctanos",
     "nombre":"(T) Nombre y apellido",

@@ -18,4 +18,50 @@ body {
 
 .line-breaker {
     white-space: pre-wrap;
-  }
+}
+
+
+.lanin{
+    select{
+        background: transparent;
+        color:white;
+        border-color: white;
+    } 
+    
+    footer select{
+        background: transparent;
+        color:#0D0101;
+        border-color:#0D0101;
+    }
+
+    footer select option {
+        background-color: white;
+        color: #0D0101;
+    }
+
+    select option {
+        background-color: white;
+        color: #3B3B3B;
+    }
+    
+    .mat-flat-button.mat-warn{
+        color:#3B3B3B;
+        background-color: white;
+    }
+
+    
+}
+
+.home {
+    select{
+        background: var(--primary-color);
+        color: white;
+        border-color:white;
+    }
+
+    select option {
+        background-color: var(--primary-color);
+        color: white;
+    }
+      
+}

@@ -23,6 +23,50 @@
       }
     }
   },
+  "lanin": {
+    "nav": {
+      "propuesta":"Propuesta de valor",
+      "como-funciona":"¿Cómo funciona?",
+      "precio": "Precio",
+      "faq":"Faq"
+    },
+    "sec1":{
+      "title":"Experiencia\nVolcán Lanín ",
+      "text1":"Te acompañamos en tu aventura\npara que sea segura e inolvidable.",
+      "btn":"Suscribirme"
+    },
+    "sec2":{
+      "a":{
+        "title":"Una plataforma para\nplanificar tu aventura"
+      },
+      "b":{
+        "title":"La señal que vuelve\nsegura tu experiencia",
+        "text":"Visualizamos todo tu recorrido y nos\nmantendremos alerta. En caso de que\nnecesites ayuda, simplemente nos das\naviso con el botón del dispositivo."
+      },
+      "c":{
+        "title":"Conexión a internet\nen refugio y base."
+      }
+    },
+    "sec3":{
+      "title":"Precio"
+    },
+    "sec4":{
+      "title":"Precio"
+    },
+    "sec5":{
+      "title":"Preguntas frecuentes",
+      "faq":{
+        "1":{
+          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
+          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+        },
+        "2":{
+          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
+          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+        }
+      }
+    }
+  },
   "contact-form":{
     "title":"Contáctanos",
     "nombre":" Nombre y apellido",
@@ -35,8 +79,8 @@
     "es":"Español"
   },
   "footer":{
-    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
-    "pp":"(T) Políticas de privacidad",
+    "cr":"Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
+    "pp":"Políticas de privacidad",
     "tel":"(02972) 427000",
     "dir":"Capitán Drury 761",
     "loc":"San Martín de los Andes",
