@@ -51,10 +51,10 @@
       "title":"Precio"
     },
     "sec4":{
-      "title":"(T) Precio"
+      "title":"Precio"
     },
     "sec5":{
-      "title":"(T) Preguntas frecuentes",
+      "title":"Preguntas frecuentes",
       "faq":{
         "1":{
           "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
@@ -79,8 +79,8 @@
     "es":"Español"
   },
   "footer":{
-    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
-    "pp":"(T) Políticas de privacidad",
+    "cr":"Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
+    "pp":"Políticas de privacidad",
     "tel":"(02972) 427000",
     "dir":"Capitán Drury 761",
     "loc":"San Martín de los Andes",

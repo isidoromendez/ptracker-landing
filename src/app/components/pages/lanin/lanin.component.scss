@@ -80,6 +80,13 @@
     color:#55665B;
 }
 
+.sec2 a.anchor {
+    display: block;
+    position: relative;
+    top: 3em;
+    visibility: hidden;
+}
+
 .ltsm .sec2 .box{
     margin-left: var(--margin-left-ltsm);
     margin-right: var(--margin-right-ltsm);
@@ -183,7 +190,7 @@
 .sec5 a.anchor {
     display: block;
     position: relative;
-    top: -3em;
+    top: 3em;
     visibility: hidden;
 }
 

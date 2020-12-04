@@ -30,10 +30,10 @@
                         fxLayoutAlign="start  center" 
                         fxFlex="0.9 0 calc(4em)"
                         class="menu">
-                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.propuesta' | translate }}</a></div>
-                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.como-funciona' | translate }}</a></div>
-                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.precio' | translate }}</a></div>
-                            <div class="mnu-item"><a mat-button href=";">{{ 'lanin.nav.faq' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href="/lanin#asec1">{{ 'lanin.nav.propuesta' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href="/lanin#asec2">{{ 'lanin.nav.como-funciona' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href="/lanin#asec4">{{ 'lanin.nav.precio' | translate }}</a></div>
+                            <div class="mnu-item"><a mat-button href="/lanin#asec5">{{ 'lanin.nav.faq' | translate }}</a></div>
                         </div>
                         <!-- lado derecho -->
                         <div class="right" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="1em" fxFlex="0.2 0 10em">
@@ -44,7 +44,7 @@
                             </div>
                             <!-- boton -->
                             <div>
-                            <a mat-flat-button color="warn" href="#asec5">{{ 'home.nav.contactarme' | translate | uppercase }}</a>
+                            <a mat-flat-button href="/lanin#asec1">{{ 'lanin.sec1.btn' | translate | uppercase }}</a>
                             </div>
                         </div>
                     </div>  
@@ -88,6 +88,7 @@
             </div>
           <!-- sec2 -->
           <div id="sec2" class="sec2">
+            <a class="anchor" id="asec2"></a>
             <div 
             class="box"
             fxLayout="column" fxLayoutAlign="start center">
