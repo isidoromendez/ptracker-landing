@@ -1,8 +1,11 @@
 <div class="home" style="height: 100vh;">
   <!-- toolbar -->
   <div class="content">
-  <mat-sidenav-container fxFlexFill class="example-container">
-    <mat-sidenav #sidenav fxLayout="column">
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav class="" #sidenav fxLayout="column" fxLayoutAlign="space-between start" >
+      <div>
+        <img class="logo" src="./assets/img/logo.png" alt="">
+      </div>
       <div fxLayout="column">
         <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
         <a href="#" mat-button>Menu Item 1</a>
@@ -12,17 +15,28 @@
         <a href="#" mat-button>Menu Item 5</a>
         <a href="#" mat-button>Menu Item 6</a>
       </div>
+      <div>
+        <div class="redes" fxLayout="row"  fxLayoutGap="1em">
+          <a href="http://cotesma.coop" target="_blank"><div class="item fb"></div></a>
+          <a href="http://cotesma.coop" target="_blank"><div class="item ig"></div></a>
+          <a href="http://cotesma.coop" target="_blank"><div class="item tw"></div></a>
+        </div>
+      </div>
+      <div>
+        {{ 'footer.cr' | translate }}
+      </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
       <div class="page-container" 
       ngClass.lt-sm = "ltsm"  
+      ngClass.sm = "ltsm"  
       ngClass.gt-sm = "gtsm">
         <video muted autoplay loop id="myVideo">  
           <source src="assets/videos/video.mp4" type="video/mp4" >
         </video>
         <!-- Toolbar gt-sm-->
         <div class="toolbar">
-          <div fxShow="true" fxHide.lt-sm="true" class="spetial-toolbar">
+          <div fxShow.lt-sm="false" fxHide.gt-sm="false"  fxHide.sm="true" class="spetial-toolbar">
             <div fxLayout="row" fxLayoutAlign="space-between center">
                 <!-- logo -->
                 <img class="logo" src="./assets/img/logo.png" alt="">
@@ -51,10 +65,10 @@
             </div>  
           </div>
           <!-- Toolbar lt-sm-->
-          <div fxShow="true" fxHide.gt-sm="true" class="spetial-toolbar">
+          <div fxShow.lt-sm="true" fxHide.gt-sm="true"  fxHide.sm="false" class="spetial-toolbar">
             <div fxLayout="row" fxLayoutAlign="space-between center">
                 <!-- hamburguesa -->
-                <div fxShow="true" fxHide.gt-sm="true">
+                <div >
                   <mat-icon class="white-icon" (click)="sidenav.toggle()">menu</mat-icon>
                 </div>            
                 <!-- lado derecho -->
@@ -110,7 +124,12 @@
           </div>
           <div 
           class="box"
-          fxLayout="row" fxLayoutAlign="space-around stretch"  fxLayoutGap="4em">
+          fxLayout="row"
+          fxLayoutAlign="space-around stretch"  fxLayoutGap="4em"
+          fxLayoutAlign.lt-sm="center center" fxLayoutGap.lt-sm="1em"
+          fxLayoutAlign.sm="center center" fxLayoutGap.sm="1em"
+          fxLayout.lt-sm="column"
+          fxLayout.sm="column">
             <div class="item">
               <img width="100%" height="100%" src="./assets/img/proyecto-lanin-foto.png" alt="">
             </div>
@@ -127,8 +146,8 @@
           <div 
           class="box"
           fxLayout="row" fxLayoutAlign="space-around stretch">
-            <div fxFlex="33%"></div>
-            <div fxFlex="66%">
+            <div fxFlex="33%" fxFlex.sm="0%" fxFlex.lt-sm="0%"></div>
+            <div fxFlex="66%" fxFlex.sm="100%" fxFlex.lt-sm="100%">
               <div class="top"><h1 class="display-1">{{ 'contact-form.title' | translate }}</h1></div>
               <div class="contact-form">
                 <div class="contact-container" fxLayout="column" fxLayoutAlign="space-between stretch" >
@@ -153,7 +172,7 @@
                     </mat-form-field>
                   </div>
                   <div fxFlexAlign="end">
-                    <button mat-flat-button color="warn">{{ 'contact-form.enviar' | translate | uppercase }}</button>
+                    <button mat-flat-button color="primary">{{ 'contact-form.enviar' | translate | uppercase }}</button>
                   </div>
                 </div>
               </div>
@@ -164,8 +183,11 @@
           <div>
             <h2>Contacto</h2>
           </div>
-          <div class="footer-info" fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="1em">
-            <div fxFlex="33%">
+          <div class="footer-info" 
+          fxLayout="row" fxLayout.sm="column" fxLayout.lt-sm="column" 
+          fxLayoutAlign="space-between stretch"  fxLayoutAlign.sm="space-between start" fxLayoutAlign.lt-sm="space-between start"
+          fxLayoutGap="1em">
+            <div fxFlex.lt-sm="100%" fxFlex.sm="100%" fxFlex="33%">
               <div 
               fxLayout="column" 
               fxLayoutAlign="space-around  center" 
@@ -187,7 +209,7 @@
                 </div>
               </div>
             </div>
-            <div fxFlex="33%" class="menu">
+            <div fxHide.lt-sm fxHide.sm fxFlex="33%" class="menu">
               <!-- Menu grande -->
               <div 
               fxLayout="column" 
@@ -200,7 +222,7 @@
                 <div class="mnu-item line"></div> 
               </div>
             </div>
-            <div fxFlex="33%">
+            <div fxFlex.lt-sm="100%" fxFlex.sm="100%" fxFlex="33%">
               <div class="redes" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1em">
                 <a href="http://cotesma.coop" target="_blank"><div class="item fb"></div></a>
                 <a href="http://cotesma.coop" target="_blank"><div class="item ig"></div></a>
@@ -208,16 +230,17 @@
               </div>
             </div>
           </div>
-          <hr>
+          <hr fxHide.lt-sm fxHide.sm>
           <div class="footer"
-          fxLayout="row" fxLayoutAlign="space-between stretch"  fxLayoutGap="4em">
-            <div>
+          fxLayout="row"  fxLayout.sm="column" fxLayout.lt-sm="column"
+          fxLayoutAlign="space-between stretch"  fxLayoutGap="4em">
+            <div fxHide.lt-sm fxHide.sm>
               <img class="logo" src="./assets/img/logo.png" alt="">
             </div>
             <div>
               {{ 'footer.cr' | translate }}
             </div>
-            <div>
+            <div fxHide.lt-sm fxHide.sm>
               <app-lang-select></app-lang-select>
             </div>
           </div>
