@@ -28,10 +28,13 @@
     
 }
 .sec1{
+    background-image: url("../../../../assets/img/lanin/bg-lanin.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     color: #f1f1f1;
-    //text-align: center;
-    padding-top: 15em;
-    padding-bottom: 15em;
 }
 
 .sec1 a.anchor {
@@ -46,33 +49,33 @@
     margin-right: var(--margin-right-gtsm);
 }
 
-.ltsm .sec1 .box{   
-    
-}
-
-/* sec0 */
-.bg-lanin{
-    background-image: url("../../../../assets/img/lanin/bg-lanin.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 700px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-
-
-.gtsm .sec1 .box h1{
+.sec1 .box h1{
     font-size: 400%;
     margin-bottom: 0.5em;
     font-weight: 700; 
     line-height: 1.2;
 }
-.gtsm .sec1 .box p{
+.sec1 .box p{
     font-size: 127%;
-    line-height: 1.5; 
-    
+    line-height: 1.5;     
 }
+
+.ltsm{
+    .box{
+        text-align: center;
+        h1{
+            font-size: 300%;
+        }
+        p{
+            font-size: 100%
+        }
+    }
+}
+
+
+
+
+
 
 /* sec2 */
 .sec2{
@@ -230,7 +233,6 @@
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0em; /* Position the navbar at the top of the page */
-    padding-bottom: 1em;
     width: 100%;
     z-index: 99999;
 }
@@ -243,7 +245,7 @@
     margin-left: 4em;
 }
 
-.gtsm .spetial-toolbar{
+.spetial-toolbar{
     color: white;
     padding-left: var(--margin-left-gtsm);
     padding-right: var(--margin-right-gtsm);
@@ -253,16 +255,19 @@
 }
 
 
-.ltsm .spetial-toolbar{
-    color: white;
-    padding-left: var(--margin-left-gtsm);
-    padding-right: var(--margin-right-gtsm);
-    background-color: var(--primary-color);
-    padding-top: 3em;
-    padding-bottom: 2em;
-}
+.ltsm{
+    .spetial-toolbar{
+        color: white;
+        padding-left: var(--margin-left-ltsm);
+        padding-right: var(--margin-right-ltsm);
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 
-
+    .toolbar.fondo{
+        background-color: #C1D4EE;
+    }
+} 
 
 .spetial-toolbar h1{
     margin:0;

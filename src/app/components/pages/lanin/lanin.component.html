@@ -16,8 +16,9 @@
       <mat-sidenav-content fxFlexFill>
         <div class="page-container" 
         ngClass.lt-sm = "ltsm"  
+        ngClass.sm = "ltsm"  
         ngClass.gt-sm = "gtsm">
-            <div class="bg-lanin">
+            <div class="">
                 <!-- Toolbar gt-sm-->
                 <div class="toolbar {{toolbarClass}}" >
                     <div fxShow="true" fxHide.lt-sm="true" class="spetial-toolbar">
@@ -67,25 +68,30 @@
                     </div>  
                     </div>
                 </div>
-                <!-- sec1 -->
-                <div class="sec1">
-                    <a class="anchor" id="asec1"></a>
-                    <div    
-                    class="box"
-                    fxLayout="row" fxLayoutAlign="space-between center" >        
-                        <div
-                            fxFlex="33%"
-                            fxFlex.lt-sm="0.8 0 calc(8em)">
-                            <h1 class="line-breaker">{{ 'lanin.sec1.title' | translate }}</h1>
-                            <p class="line-breaker">{{ 'lanin.sec1.text1' | translate }}</p> 
-                            <button  mat-flat-button color="warn">{{ 'lanin.sec1.btn' | translate | uppercase }}</button>
-                        </div>
-                        <div
-                            fxFlex=50%>
-                        </div>
-                    </div>
+                
+            </div>
+            <!-- sec1 -->
+            <a class="anchor" id="asec1"></a>
+            <div class="sec1" div fxLayout="column" fxLayoutAlign="space-around center">
+              <div    
+              class="box"
+              fxLayout="row"
+              fxLayout.sm="column"
+              fxLayout.lt-sm="column"
+              fxLayoutAlign="space-between center" >        
+                <div
+                    fxFlex="33%"
+                    fxFlex.sm="auto"
+                    fxFlex.lt-sm="auto">
+                    <h1 class="line-breaker">{{ 'lanin.sec1.title' | translate }}</h1>
+                    <p class="line-breaker">{{ 'lanin.sec1.text1' | translate }}</p> 
+                    <button  mat-flat-button color="warn">{{ 'lanin.sec1.btn' | translate | uppercase }}</button>
+                </div>
+                <div
+                    fxFlex=50%>
                 </div>
             </div>
+          </div>
           <!-- sec2 -->
           <div id="sec2" class="sec2">
             <a class="anchor" id="asec2"></a>
