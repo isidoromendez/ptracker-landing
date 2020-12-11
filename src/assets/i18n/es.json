@@ -78,6 +78,9 @@
     "en":"Inglés",
     "es":"Español"
   },
+  "menu":{
+    "cr":"Copyright ©  2020 - Patagonia Tracker\nTodos los derechos reservados"
+  },
   "footer":{
     "cr":"Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
     "pp":"Políticas de privacidad",

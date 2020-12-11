@@ -2,29 +2,36 @@
   <!-- toolbar -->
   <div class="content">
   <mat-sidenav-container fxFlexFill>
-    <mat-sidenav class="" #sidenav fxLayout="column" fxLayoutAlign="space-between start" >
-      <div>
-        <img class="logo" src="./assets/img/logo.png" alt="">
-      </div>
-      <div fxLayout="column">
-        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-        <a href="#" mat-button>Menu Item 1</a>
-        <a href="#" mat-button>Menu Item 2</a>
-        <a href="#" mat-button>Menu Item 3</a>
-        <a href="#" mat-button>Menu Item 4</a>
-        <a href="#" mat-button>Menu Item 5</a>
-        <a href="#" mat-button>Menu Item 6</a>
-      </div>
-      <div>
-        <div class="redes" fxLayout="row"  fxLayoutGap="1em">
-          <a href="http://cotesma.coop" target="_blank"><div class="item fb"></div></a>
-          <a href="http://cotesma.coop" target="_blank"><div class="item ig"></div></a>
-          <a href="http://cotesma.coop" target="_blank"><div class="item tw"></div></a>
+    <mat-sidenav class="" #sidenav  >
+      <div fxLayout="column" class="side-content" fxLayoutAlign="space-between start">
+        <div >
+          <div fxLayout="row" fxLayoutAlign="space-between start" class="header" >
+            <div>
+              <img class="logo" src="./assets/img/logo.png" alt="">
+            </div>
+            <div>
+              <mat-icon class="white-icon" (click)="sidenav.toggle()">clear</mat-icon>
+            </div>
+          </div>
+          <div class="menu" fxLayout="column" fxLayoutAlign="space-between start">        
+            <a mat-button href="#asec1" (click)="sidenav.toggle()">{{ 'home.nav.quienes-somos' | translate }}</a>
+            <a mat-button href="#asec3" (click)="sidenav.toggle()">{{ 'home.nav.que-hacemos' | translate }}</a>
+            <a mat-button href="#asec4" (click)="sidenav.toggle()">{{ 'home.nav.proyectos' | translate }}</a>
+            <a mat-button href="#asec4" (click)="sidenav.toggle()">{{ 'footer.pp' | translate }}</a>
+            <app-lang-select></app-lang-select>
+          </div>
         </div>
-      </div>
-      <div>
-        {{ 'footer.cr' | translate }}
-      </div>
+        <div>          
+          <div class="redes">
+            <div fxLayout="row"  fxLayoutGap="1em">
+              <a href="http://cotesma.coop" target="_blank"><div class="item fb"></div></a>
+              <a href="http://cotesma.coop" target="_blank"><div class="item ig"></div></a>
+              <a href="http://cotesma.coop" target="_blank"><div class="item tw"></div></a>
+            </div>
+          </div>
+          <div class="footer line-breaker">{{ 'menu.cr' | translate }}</div>
+        </div>
+      </div>      
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
       <div class="page-container" 

@@ -218,6 +218,8 @@
 .ltsm{
     .sec4{
         padding-top: 6em;
+        padding-top: 6em;
+        height: auto;
         height: 93vh;
         background-position-y: bottom;
         background-repeat: no-repeat;
@@ -441,6 +443,32 @@ footer .footer-info .line{
 .mat-sidenav{
     background-color:var(--primary-color);
     color: white;
-    max-width: 37vh;
+    max-width: 100%;
     padding: 2em;
+    position: fixed;
+}
+
+.side-content{
+    height: 100%;
+    width: 100%;
+    .header{
+        padding-bottom: 6vh;
+        .logo{
+            height: 2.5em;
+        }
+    }
+    .menu .mat-button{
+        margin-bottom: 1em;
+    }
+    app-lang-select{
+        margin-left: 1em;
+    }
+    .redes{
+        margin-bottom: 1em;
+        margin-top: 2em;
+        height: auto;
+    }
+    .footer{
+        font-size: 82%;
+    }
 }
