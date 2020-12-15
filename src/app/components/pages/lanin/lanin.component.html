@@ -18,10 +18,10 @@
         ngClass.lt-sm = "ltsm"  
         ngClass.sm = "ltsm"  
         ngClass.gt-sm = "gtsm">
-            <div class="">
-                <!-- Toolbar gt-sm-->
+            <div class="">                
                 <div class="toolbar {{toolbarClass}}" >
-                    <div fxShow="true" fxHide.lt-sm="true" class="spetial-toolbar">
+                    <!-- Toolbar gt-sm-->
+                    <div fxHide.lt-sm="true" fxHide.sm="true" class="spetial-toolbar">
                     <div fxLayout="row" fxLayoutAlign="space-between center">
                         <!-- logo -->
                         <a href="/"><img class="logo" src="./assets/img/logo.png" alt=""></a>
@@ -51,7 +51,7 @@
                     </div>  
                     </div>
                     <!-- Toolbar lt-sm-->
-                    <div fxShow="true" fxHide.gt-sm="true" class="spetial-toolbar">
+                    <div fxHide.gt-sm="true"   class="spetial-toolbar" >
                     <div fxLayout="row" fxLayoutAlign="space-between center">
                         <!-- hamburguesa -->
                         <div fxShow="true" fxHide.gt-sm="true">
@@ -72,23 +72,17 @@
             </div>
             <!-- sec1 -->
             <a class="anchor" id="asec1"></a>
-            <div class="sec1" div fxLayout="column" fxLayoutAlign="space-around center">
+            <div class="sec1" div fxLayout="column" 
+            fxLayoutAlign="space-around start"
+            fxLayoutAlign.sm="space-around center"
+            fxLayoutAlign.lt-sm="space-around center">
               <div    
               class="box"
-              fxLayout="row"
-              fxLayout.sm="column"
-              fxLayout.lt-sm="column"
-              fxLayoutAlign="space-between center" >        
-                <div
-                    fxFlex="33%"
-                    fxFlex.sm="auto"
-                    fxFlex.lt-sm="auto">
+              >        
+                <div>
                     <h1 class="line-breaker">{{ 'lanin.sec1.title' | translate }}</h1>
                     <p class="line-breaker">{{ 'lanin.sec1.text1' | translate }}</p> 
                     <button  mat-flat-button color="warn">{{ 'lanin.sec1.btn' | translate | uppercase }}</button>
-                </div>
-                <div
-                    fxFlex=50%>
                 </div>
             </div>
           </div>
@@ -100,14 +94,64 @@
             fxLayout="column" fxLayoutAlign="start center">
               <div class="item item1 l1"><img src="./assets/img/lanin/l1.png" alt=""></div>
               <div class="item item2">       
-                <h1 class="line-breaker">{{ 'lanin.sec2.a.title' | translate }}</h1>         
-                <img src="./assets/img/lanin/sec2.png" alt="">
+                <h1 class="line-breaker">{{ 'lanin.sec2.a.title' | translate }}</h1>
+                <div class="sec-content" fxLayout="row" fxLayoutAlign="space-between center">
+                  <div class="left" fxFlex="50%" >
+                    <!--actividad-->
+                    <div >
+                      <div class="bg-line-dot">
+                        <h2>ACTIVIDAD</h2>                        
+                      </div>                    
+                      <p>Monitoreamos todo tu recorrido en tiempo real</p>
+                    </div>
+                    <!--Santi el volcan-->
+                    <div>
+                      <div class="bg-line-dot">
+                        <h2 fxFlex="35%">SENTÍ EL VOLCÁN</h2>
+                      </div>                    
+                      <p>Te trasladamos al volcán para que empieces a vivirlo</p>
+                    </div>
+                    <!-- comunidad-->
+                    <div>
+                      <div class="bg-line-dot">
+                        <h2>COMUNIDAD</h2>
+                      </div>                    
+                      <p>Te conectamos con la comunidad para que compartas dudas y planifiques tu experiencia.</p>
+                    </div>
+                    <!--tracker-->
+                    <div>
+                      <div class="bg-line-dot">
+                        <h2>TRACKER</h2>
+                      </div>                    
+                      <p>Te damos acceso al dispositivo para que puedas personalizarlo antes de tu llegada.</p>
+                    </div>
+                  </div>
+                  <div class="right" fxFlex="50%" fxLayout="row" fxLayoutAlign="end center" >
+                    <img src="./assets/img/lanin/compu.png" alt="">
+                  </div>
+                </div>
               </div>
               <div class="item item3 l2"><img src="./assets/img/lanin/l2.png" alt=""></div>
               <div class="item item4">
                   <h1 class="line-breaker">{{ 'lanin.sec2.b.title' | translate }}</h1>
                   <p class="line-breaker">{{ 'lanin.sec2.b.text' | translate }}</p>
-                  <img src="./assets/img/lanin/sec2b.png" alt="">
+                  <div>
+                    <div class="btn-conexion">
+                      <img src="./assets/img/lanin/btn-conexion.svg" alt="">
+                    </div>
+                    <div class="btns" fxLayout="row" fxLayoutAlign="center start">
+                      <div class="btn traking" fxLayout="column" fxLayoutAlign="start center" >
+                        <img src="./assets/img/lanin/tracker.svg" alt="">
+                        <h2>{{'Tracking' | uppercase}}</h2>
+                        <p>Nuestra tecnología iot nos brinda acceso de tu ubicación en tiempo real.</p>
+                      </div>
+                      <div class="btn ayuda" fxLayout="column" fxLayoutAlign="start center">
+                        <img src="./assets/img/lanin/ayuda.svg" alt="">
+                        <h2>{{'Botón de Ayuda' | uppercase}}</h2>
+                        <p>Nos permite localizarte y accionar los protocolos de rescate.</p>
+                      </div>
+                    </div>                    
+                  </div>
                   <h1 class="c-title line-breaker">{{ 'lanin.sec2.c.title' | translate }}</h1>
               </div>              
             </div>
@@ -117,7 +161,33 @@
             <a class="anchor" id="asec4"></a>
             <div class="box" fxLayout="column" fxLayoutAlign="start center">
               <h1 class="display-1">{{ 'lanin.sec4.title' | translate }}</h1>  
-              <img src="./assets/img/lanin/precio.png" alt="">            
+              <table class="flatTable">
+                <tr class="header">
+                  <td></td>
+                  <td class="simple">SIMPLE</td>
+                  <td class="anual">ANUAL</td>
+                </tr>
+                <tr>
+                  <td>{{'Servicio de tracking' | uppercase}}</td>
+                  <td>{{'1 Acceso' | uppercase}}</td>
+                  <td>{{'Ilimitados' | uppercase}}</td>
+                </tr>
+                <tr class="grey">
+                  <td>{{'Botón de ayuda' | uppercase}}</td>
+                  <td>{{'ok' | uppercase}}</td>
+                  <td>{{'ok' | uppercase}}</td>
+                </tr>
+                <tr class="price">
+                  <td></td>
+                  <td class="simple">{{'12 US$'}}</td>
+                  <td class="anual">{{'20 US$'}}</td>
+                </tr>
+                <tr >
+                  <td></td>
+                  <td class="simple"><a mat-flat-button href="/lanin">{{ 'Suscribirme' | uppercase }}</a></td>
+                  <td class="anual"><a mat-flat-button href="/lanin">{{ 'Suscribirme' | uppercase }}</a></td>
+                </tr>                
+              </table>           
             </div>
           </div>
           <!-- faq -->
