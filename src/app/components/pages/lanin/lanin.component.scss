@@ -1,4 +1,30 @@
 /* Style the video: 100% width and height to cover the entire window */
+#a1.anchor {
+    display: block;
+    position: relative;
+    top: 3em;
+    visibility: hidden;
+}
+#a2.anchor {
+    display: block;
+    position: relative;
+    top: -28em;
+    visibility: hidden;
+}
+#a3.anchor {
+    display: block;
+    position: relative;
+    top: -10em;
+    visibility: hidden;
+}
+#a4.anchor {
+    display: block;
+    position: relative;
+    top: -1em;
+    visibility: hidden;
+}
+
+
 
 .page-container{
     padding-top:0em;
@@ -37,13 +63,6 @@
     color: #f1f1f1;
 }
 
-.sec1 a.anchor {
-    display: block;
-    position: relative;
-    top: -20em;
-    visibility: hidden;
-}
-
 .gtsm .sec1 .box{   
     margin-left: calc(5em + var(--margin-left-gtsm));
     margin-right: var(--margin-right-gtsm);
@@ -62,7 +81,6 @@
 
 .ltsm{
     .sec1{
-        background-position-x: -59em;
         .box{
             text-align: center;
             h1{
@@ -80,28 +98,29 @@
 .sec2{
     background-color: white;
     color:#55665B;
-    a.anchor {
-        display: block;
-        position: relative;
-        top: 3em;
-        visibility: hidden;
+    #svgRoute {
+        width: 50%;
+        height: auto;
+        position: absolute;
     }
+    
     .box{
         margin-left: var(--lanin-margin-left-gtsm);
         margin-right: var(--lanin-margin-right-gtsm);
         .item.l1{
             img{
                 max-width: 43em;
-                margin-right: 3em;
+                margin-left: 24%;
             }
         } 
         .item.l2{
             img{
                 max-width: 21em;
-                margin-right: 16em;
+                margin-left: 16em;
             }
         }
         .item{
+            width: 129vh;
             h1{
                 font-weight: 300;
                 font-size: 304%;
@@ -109,28 +128,33 @@
             }
         }
         .item2{
+            background-color: white;
+            margin-top: 26vh;
+            z-index: 999;
             .sec-content{
                 .left{
                     .bg-line-dot{
                         background-image: url("../../../../assets/img/lanin/line-dot.svg"); 
                         background-position: center;
                         background-repeat: no-repeat;
-                        background-position-x: -19px;                       
+                        background-position-x: -19px;            
+                                 
                     }
                     .line{
                         padding-top: 11px;
                         padding-left: 1em;
                     }
                     h2{
-                        font-weight: 700;
-                        font-size: 100%;
+                        font-weight: 700;                        
+                        font-size: 100% ;
                         margin-bottom: 0em; 
                         background-color: white;
                         display: initial;
                         padding-right: 1em;
+                        max-width: 42% !important;  
                     }
                     p{
-                        font-size: 81%;
+                        font-size: 100%;
                     }
                 }
                 .right{
@@ -143,9 +167,9 @@
         .item4{
             .btn-conexion{
                 position: absolute;
-                padding-left: 19em;
+                padding-left: 78vh;
                 img{
-                    width:59%;
+                    width:43vh;
                 }
             }
             .btns{
@@ -155,7 +179,7 @@
                     width: 34%;
                 }
                 img{
-                    width:80%;
+                    width:61%;
                 }
                 h2{
                     font-size: 115%;
@@ -181,7 +205,7 @@
                 line-height: 1.4;
                 position: relative;
                 top: -1.8em;
-                left: -3em;
+                padding-left: 9%;
             }
             p{
                 text-align: right;
@@ -196,15 +220,110 @@
 }
 
 .ltsm .sec2{
+    margin-left: var(--lanin-margin-left-ltsm);
+    margin-right: var(--lanin-margin-right-ltsm);
+    .item.l1{
+        img{
+            max-width: 18em;
+            margin-left: -1%;
+        }
+    } 
+    .item.l2{
+        img{
+            max-width: 21em;
+            margin-left: 16em;
+        }
+    }
     .box{
         margin-left: var(--margin-left-ltsm);
         margin-right: var(--margin-right-ltsm);
         .item{
+            width: auto;
             h1{
                 font-weight: 300;
-                font-size: 250%;
+                font-size: 225%;
                 line-height: 1.4;
                 text-align: center;
+                margin: 0.6em 0 1.0em 0;
+            }
+        }
+        .item.item2{
+            img{
+                width: 80%;
+                margin: 1em 0 2em 0;
+            }
+            img.l2{
+                width: 100%;
+                display: none;
+                margin: 0 0 0 0;
+            }
+            h2{
+                font-weight: 700;                        
+                font-size: 78% ;
+                margin-bottom: 0em; 
+                background-color: white;
+                display: initial;
+                padding-right: 1em;
+                max-width: 42% !important;  
+            }
+            p{
+                font-size: 85%;
+            }
+        }
+        .item4{
+            .btn-conexion{
+                position: absolute;
+                padding-left: 0vh;
+                padding-top: 7em;
+                img{
+                    width: 51%;
+                    padding-left: 12vh;
+                }
+            }
+            .btns{
+                height: 32vh;
+                margin-top: 9vh;
+                img{
+                    width:100%;
+                }
+                h2{
+                    font-size: 81%;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-bottom: 0.2em;
+                }
+                p{
+                    text-align: center;
+                    font-size: 69%;                    
+                }
+            }
+            h1{
+                text-align: right;
+                font-weight: 300;
+                font-size: 225%;
+                line-height: 1.4;
+                margin: 0.6em 0 1em 0;
+            }
+            .c-title{
+                font-weight: 300;
+                font-size: 225%;
+                text-align: left;
+                line-height: 1.4;
+                position: relative;
+                padding-left: 9%;
+                padding-bottom: 14vh;
+            }
+            p{
+                text-align: right;
+                font-size: 141%;
+                line-height: 1.6;
+                font-weight: 300;
+                width: 100%;
+            }
+            img{
+                max-width: 45em;
+                margin-right: 1em;
+                left: -3em;
             }
         }
     }
@@ -217,16 +336,10 @@
     padding-top: 9em;
     background-image: url("../../../../assets/img/bg-proy-lanin.png"); /* The image used */
     background-color: #F7F7F7; /* Used if the image is unavailable */
-    height: 700px; /* You must set a specified height */
-    background-position: center; /* Center the image */
+    background-position: bottom; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    a.anchor {
-        display: block;
-        position: relative;
-        top: -10em;
-        visibility: hidden;
-    }
+    background-size: auto; /* Resize the background image to cover the entire container */
+    padding-bottom: 7em;
     .box{
         padding-left: 0;
         margin-left: var(--margin-left-gtsm);
@@ -240,13 +353,13 @@
         }
         .flatTable{  
             text-align: center;
-            width:70%;
+            width:50%;
             min-width:500px;
             border-collapse:collapse;  
             background-color:white;
             box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
             tr{
-                height: 4em;
+                height: em;
             }
             tr.grey{
                 background-color:#E4E4E4;
@@ -254,7 +367,10 @@
             .header{
                 color:white;
                 font-weight: 700;
-                font-size:120%;
+                font-size: 125%;
+                td{
+                    padding: 1.2em;
+                }
                 .simple{
                     background-color:#7FAEDB;
                 }
@@ -263,13 +379,19 @@
                 }                
             }
             tr.price{
-                font-size: 150%;
-                font-weight: 700;
+                font-size: 180%;
+                font-weight: 400;
+                padding: 1em;
                 .simple{
                     color: #7FAEDB;
                 }
                 .anual{
                     color:#51675A;
+                }
+            }
+            tr.btns{
+                td{
+                    padding: 1em;
                 }
             }
             .simple .mat-flat-button{
@@ -279,6 +401,111 @@
             .anual .mat-flat-button{
                 background-color:#51675A;
                 color:white;
+            }
+            td.desc{
+                padding: 1.2em;                
+                border-left: none;
+            }
+            td{
+                border-left: 1px solid;
+                border-right: 1px solid;
+                width: 50em;
+                font-size: 95%;
+                img{
+                    width: 23px;
+                }
+            }
+        }
+    }
+}
+
+.ltsm{
+    .sec4{
+        color:#55665B;
+        padding-top: 9em;
+        background-image: url("../../../../assets/img/bg-proy-lanin.png"); /* The image used */
+        background-color: #F7F7F7; /* Used if the image is unavailable */
+        background-position: bottom; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: auto; /* Resize the background image to cover the entire container */
+        padding-bottom: 7em;
+        .box{
+            padding-left: 0;
+            margin-left: var(--margin-left-gtsm);
+            padding-top: 0em;
+            padding-right: 0em;
+            margin-right: var(--margin-right-gtsm);
+            h1{
+                font-size: 400%;
+                margin-bottom: 1em;
+                font-weight: 100;
+            }
+            .flatTable{  
+                text-align: center;
+                width:50%;
+                min-width:340px;
+                border-collapse:collapse;  
+                background-color:white;
+                box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
+                tr{
+                    height: em;
+                }
+                tr.grey{
+                    background-color:#E4E4E4;
+                }
+                .header{
+                    color:white;
+                    font-weight: 700;
+                    font-size: 125%;
+                    td{
+                        padding: 1.2em;
+                    }
+                    .simple{
+                        background-color:#7FAEDB;
+                    }
+                    .anual{
+                        background-color:#51675A;
+                    }                
+                }
+                tr.price{
+                    font-size: 180%;
+                    font-weight: 400;
+                    padding: 1em;
+                    .simple{
+                        color: #7FAEDB;
+                    }
+                    .anual{
+                        color:#51675A;
+                    }
+                }
+                tr.btns{
+                    td{
+                        padding: 1em;
+                    }
+                }
+                .simple .mat-flat-button{
+                    background-color:#7FAEDB;
+                    color:white;
+                    font-size: 100%;
+                }
+                .anual .mat-flat-button{
+                    background-color:#51675A;
+                    color:white;
+                    font-size: 100%;
+                }
+                td.desc{
+                    padding: 1.2em;                
+                    border-left: none;
+                }
+                td{
+                    border-left: 1px solid;
+                    border-right: 1px solid;
+                    width: 10em;
+                    font-size: 62%;
+                    img{
+                        width: 23px;
+                    }
+                }
             }
         }
     }
@@ -290,12 +517,7 @@
     color:#55665B;
     background-color: white; 
     padding-bottom: 12em;
-    a.anchor {
-        display: block;
-        position: relative;
-        top: 3em;
-        visibility: hidden;
-    }
+    
     .box{
         padding-top: 10em;
         margin-right: var(--margin-right-gtsm);
@@ -308,6 +530,29 @@
     }
 }
 
+.ltsm{
+    .sec5{
+        color:#55665B;
+        background-color: white; 
+        padding-bottom: 12em;
+        
+        .box{
+            padding-top: 5em;
+            margin-right: var(--margin-right-gtsm);
+            margin-left: var(--margin-left-gtsm);
+            h1{
+                font-size: 400%;
+                margin-bottom: 1em;
+                font-weight: 100;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.mat-expansion-panel{
+    width: 100%;
+}
 .mat-expanded .mat-expansion-panel-header-title{
     color:#7FAEDB;
     font-weight: 700;
@@ -317,6 +562,39 @@
     color:#3B3B3B;
     font-weight: 700;
 } 
+
+.mat-sidenav{
+    background-color:#312F2F;
+    color: white;
+    max-width: 100%;
+    padding: 2em;
+    position: fixed;
+}
+
+.side-content{
+    height: 100%;
+    width: 100%;
+    .header{
+        padding-bottom: 6vh;
+        .logo{
+            height: 2.5em;
+        }
+    }
+    .menu .mat-button{
+        margin-bottom: 1em;
+    }
+    app-lang-select{
+        margin-left: 1em;
+    }
+    .redes{
+        margin-bottom: 1em;
+        margin-top: 2em;
+        height: auto;
+    }
+    .footer{
+        font-size: 82%;
+    }
+}
 
 /* side */
 .example-container {
@@ -376,6 +654,12 @@
     height: 3em;
 }
 
+.ltsm{
+    footer{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
 footer{
     color: #0D0101;
     background-color:#C1D4EE;
@@ -383,6 +667,7 @@ footer{
     padding-right: var(--margin-right-gtsm);    
     padding-top: 10em;
     padding-bottom: 5em;
+    font-size: 90%;
     .ico{
         position: absolute;
         font-size: 17px;
@@ -402,28 +687,7 @@ footer{
     a:visited{
         color: #0D0101;
     }
-    .redes{
-        height: 100%;
-        .item{
-            border: 0px solid;
-            background-color: width; 
-            height: 28px;
-            width: 28px;
-            border-radius: 5px;
-            background-position: center; 
-            background-repeat: no-repeat; 
-            background-size: cover; 
-        }
-        .item.fb{
-            background-image: url("../../../../assets/img/fb_b.png"); 
-        }
-        .item.ig{
-            background-image: url("../../../../assets/img/ig_b.png"); 
-        }
-        .item.tw{
-            background-image: url("../../../../assets/img/tw_b.png"); 
-        }
-    }
+    
     hr {
         height:1px;
         border-width:0;
@@ -438,5 +702,42 @@ footer{
     }
     .footer-info .line{
         padding-bottom: 1em;
+    }
+}
+
+.side-content{
+    .redes{
+        .item.fb{
+            background-image: url("../../../../assets/img/fb.png"); 
+        }
+        .item.ig{
+            background-image: url("../../../../assets/img/ig.png"); 
+        }
+        .item.tw{
+            background-image: url("../../../../assets/img/tw.png"); 
+        }
+    }
+}
+
+.redes{
+    height: 100%;
+    .item{
+        border: 0px solid;
+        background-color: width; 
+        height: 28px;
+        width: 28px;
+        border-radius: 5px;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+    .item.fb{
+        background-image: url("../../../../assets/img/fb_b.png"); 
+    }
+    .item.ig{
+        background-image: url("../../../../assets/img/ig_b.png"); 
+    }
+    .item.tw{
+        background-image: url("../../../../assets/img/tw_b.png"); 
     }
 }

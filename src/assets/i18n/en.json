@@ -3,73 +3,150 @@
     "nav": {
       "quienes-somos":"¿Who we are?",
       "que-hacemos":"¿What we do?",
-      "proyectos": "Proyects",
+      "proyectos": "Projects",
       "contactarme":"Contact"
     },
     "sec1":{
-      "title":"Technology innovation ",
-      "text1":"Desarrollamos proyectos integrando tecnologías de redes, iot, web y mobile para resolver problemas mediante innovación continua."
+      "title":"Technological innovation",
+      "text1":"We develop projects that integrate network technology, IoT, web and mobile services, to solve issues by providing useful and innovative services."
     },
     "sec3":{
-      "title":"Soluciones\nde calidad",
-      "text1":"Somos una división tecnológica de Cotesma. Nuestra finalidad es brindar servicios de alto valor agregado relacionados con el mundo de las telecomunicaciones que puedan ser implementados en distintos escenarios geográficos y países."
+      "title":"Quality solutions",
+      "text1":"We are a tech division from Cotesma. Our goal is to provide services related to telecommunications that can be implemented in a variety of scenarios providing high added value."
     },
     "sec4":{
-      "title":"Proyects",
+      "title":"Projects",
       "p1":{
-        "title":"Experiencia\nVolcán Lanín",
-        "text1":"Te acompañamos en tu aventura\npara que sea segura e inolvidable.",
+        "title":"Lanin Experience",
+        "text1":"We accompany you on your adventure to make it safe and unforgettable.",
         "btn":"More info"
       }
     }
   },
   "lanin": {
     "nav": {
-      "propuesta":"Propuesta de valor",
-      "como-funciona":"¿Cómo funciona?",
-      "precio": "Precio",
-      "faq":"Faq"
+      "propuesta":"Value proposition",
+      "como-funciona":"How does it work?",
+      "precio": "Pricing",
+      "faq":"FAQs"
     },
     "sec1":{
-      "title":"Experiencia\nVolcán Lanín ",
-      "text1":"Te acompañamos en tu aventura\npara que sea segura e inolvidable.",
+      "title":"Lanin\nExperience",
+      "text1":"We accompany you on your adventure to\nmake it safe and unforgettable.",
       "btn":"Suscribirme"
     },
     "sec2":{
       "a":{
-        "title":"Una plataforma para\nplanificar tu aventura"
+        "title":"A service to plan and fully enjoy your adventure",
+        "1":{
+          "title":"What we do",
+          "text":"We monitor your\nascent in real time."
+        },
+        "2":{
+          "title":"Feel the volcano ",
+          "text":"We bring the volcano closer to you, \nso you start living the experience even before climbing!"
+        },
+        "3":{
+          "title":"Community",
+          "text":"We put you in touch with other climbers and guides \nto share and plan your experience, and also evacuate doubts."
+        },
+        "4":{
+          "title":"Tracker",
+          "text":"We grant you access to the device before arrival,\nso you can start customizing it."
+        }
       },
       "b":{
-        "title":"La señal que vuelve\nsegura tu experiencia",
-        "text":"Visualizamos todo tu recorrido y nos\nmantenemos alerta. En caso de que\nnecesites ayuda, simplemente nos das\naviso con el botón del dispositivo."
+        "title":"The signal that makes\nyour experience safe",
+        "text":"We visualize track of your entire journey\nand we stay alert. If you need help, you \nsimply notify us with the device’s button.",
+        "1":{
+          "title":"Tracking",
+          "text":"Our IoT technology shows your real-time location"
+        },
+        "2":{
+          "title":"Help button",
+          "text":"It allows us to locate you and activate rescue protocols."
+        }
       },
       "c":{
-        "title":"Conexión a internet\nen refugio y base."
+        "title":"Internet in the\nrefuge and base."
       }
     },
     "sec4":{
-      "title":"Precio"
+      "title":"Pricing",
+      "rows":{
+        "1":{
+          "col1":"Tracking service",
+          "col2":"1 access",
+          "col3":"Unlimited access"
+        },
+        "2":{
+          "col1":"Help button",
+          "col2":"",
+          "col3":""
+        },
+        "3":{
+          "col1":"Internet in base",
+          "col2":"",
+          "col3":""
+        },
+        "4":{
+          "col1":"Internet in refuge",
+          "col2":"",
+          "col3":""
+        },
+        "5":{
+          "col1":"Insurance",
+          "col2":"",
+          "col3":""
+        },
+        "6":{
+          "col1":"Platform access",
+          "col2":"",
+          "col3":""
+        },
+        "7":{
+          "col1":"",
+          "col2":"USD 12",
+          "col3":"USD 20"
+        }
+      }
     },
     "sec5":{
       "title":"Preguntas frecuentes",
       "faq":{
         "1":{
-          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
-          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+          "Q":"Where do I pick up the tracking device?",
+          "A":"In one of our authorized points. Find your nearest pick-up point here."
         },
         "2":{
-          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
-          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+          "Q":"How do I use the tracking device?",
+          "A":"To activate the device, enter the “tracker” section in our platform and activate the device by entering its identifier code. You will find a detailed tutorial in that same section that will guide you through all the functions."
+        },
+        "3":{
+          "Q":"What do I do with the device upon my return?",
+          "A":"You must return it to one of our pick-up points."
+        },
+        "4":{
+          "Q":"Where is wi-fi available in the mountain?",
+          "A":"You have free Wi-Fi access in the shelter and at the base of the mountain. But there is no internet access during the ascent and descent."
+        },
+        "5":{
+          "Q":"How do I carry the device during the journey?",
+          "A":"The device uses the IoT and GPS networks to know your location, so it mustn’t remain inside your backpack or pockets."
+        },
+        "6":{
+          "Q":"Other questions",
+          "A":"Register and ask your questions to the Lanin Experience community. Many experienced people are willing to help you!"
         }
       }
     }
   },
   "contact-form":{
-    "title":"Contáctanos",
-    "nombre":"Nombre y apellido",
-    "email":"Email",
-    "mensaje":"Mensaje",
-    "enviar":"¡Enviar Mensaje!"
+    "title":"Get in touch",
+    "nombre":"Full name",
+    "email":"E-mail",
+    "mensaje":"[Type your message here]",
+    "enviar":"¡Send Message!"
   },
   "lang-select":{
     "en":"English",
@@ -84,10 +161,12 @@
     "tel":"(02972) 427000",
     "dir":"Capitán Drury 761",
     "loc":"San Martín de los Andes",
-    "cp":"(CP8370) Neuquen"
+    "cp":"(CP8370) Neuquen",
+    "contact":"Contacto"
   },
   "gen":{
     "hola":"Hi",
-    "page-title":"Patagonia Tracker"
+    "page-title":"Patagonia Tracker",
+    "subscribe":"Subscribe"
   }
 }

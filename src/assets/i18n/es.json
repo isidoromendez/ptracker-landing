@@ -37,11 +37,35 @@
     },
     "sec2":{
       "a":{
-        "title":"Una plataforma para\nplanificar tu aventura"
+        "title":"Una plataforma para\nplanificar tu aventura",
+        "1":{
+          "title":"Actividad",
+          "text":"Monitoreamos todo tu\nrecorrido en tiempo real"
+        },
+        "2":{
+          "title":"Sentí el volcán",
+          "text":"Te trasladamos al volcán para\nque empieces a vivirlo"
+        },
+        "3":{
+          "title":"Comunidad",
+          "text":"Te conectamos con la comunidad para que\ncompartas dudas y planifiques tu experiencia."
+        },
+        "4":{
+          "title":"Tracker",
+          "text":"Te damos acceso al dispositivo para que\npuedas personalizarlo antes de tu llegada."
+        }
       },
       "b":{
         "title":"La señal que vuelve\nsegura tu experiencia",
-        "text":"Visualizamos todo tu recorrido y nos\nmantenemos alerta. En caso de que\nnecesites ayuda, simplemente nos das\naviso con el botón del dispositivo."
+        "text":"Visualizamos todo tu recorrido y nos\nmantenemos alerta. En caso de que\nnecesites ayuda, simplemente nos das\naviso con el botón del dispositivo.",
+        "1":{
+          "title":"Tracking",
+          "text":"Nuestra tecnología iot nos brinda acceso de tu ubicación en tiempo real."
+        },
+        "2":{
+          "title":"Botón de Ayuda",
+          "text":"Nos permite localizarte y accionar los protocolos de rescate."
+        }
       },
       "c":{
         "title":"Conexión a internet\nen refugio y base."
@@ -51,18 +75,71 @@
       "title":"Precio"
     },
     "sec4":{
-      "title":"Precio"
+      "title":"Precio",
+      "rows":{
+        "1":{
+          "col1":"Servicio de Tracking",
+          "col2":"1 Acceso",
+          "col3":"Ilimitados"
+        },
+        "2":{
+          "col1":"Botón de Ayuda",
+          "col2":"",
+          "col3":""
+        },
+        "3":{
+          "col1":"Acceso a internet en base",
+          "col2":"",
+          "col3":""
+        },
+        "4":{
+          "col1":"Acceso ainternet en refugio",
+          "col2":"",
+          "col3":""
+        },
+        "5":{
+          "col1":"Seguro",
+          "col2":"",
+          "col3":""
+        },
+        "6":{
+          "col1":"Acceso a plataforma",
+          "col2":"",
+          "col3":""
+        },
+        "7":{
+          "col1":"",
+          "col2":"12 US$",
+          "col3":"20 US$"
+        }
+      }
     },
     "sec5":{
       "title":"Preguntas frecuentes",
       "faq":{
         "1":{
-          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
-          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+          "Q":"¿Donde retiro el dispositivo?",
+          "A":"Los dispositivos se entregan en los puntos habilitados. Busca acá el más cercano."
         },
         "2":{
-          "Q":"¿Tengo señal de Wi-Fi durante el ascenso?",
-          "A":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad "
+          "Q":"¿Cómo se usa el dispositivo?",
+          "A":"En nuestra plataforma, ingresando en el menú \"tracker\" podrás activar el dispositivo ingresando el Código identificador de tu tracker. También encontraras un tutorial de cómo usar el dispositivo."
+        },
+        "3":{
+          "Q":"¿Que hago con el dispositivo a mi regreso?",
+          "A":"Tenes que devolverlo al punto donde lo retiraste para que otro pueda disfrutar de esta experiencia."
+        },
+        "4":{
+          "Q":"¿En que lugares tengo señal de wifi?",
+          "A":"Tenes acceso libre a la red de Wifi que hay en los refugios y en la base del volcán. No hay acceso a WiFi durante el ascenso y descenso."
+        },
+        "5":{
+          "Q":"¿Cómo llevo el dispositivo durante el ascenso y descenso?",
+          "A":"El dispositivo utiliza la red IoT y  GPS para poder saber tu ubicación por lo que es necesario que no quede dentro de la mochila o bolsillos."
+        },
+        "6":{
+          "Q":"Tengo más consultas",
+          "A":"Regístrate y plantea todas tus dudas en la comunidad, habrá mucha gente dispuesta a ayudarte."
         }
       }
     }
@@ -87,10 +164,12 @@
     "tel":"(02972) 427000",
     "dir":"Capitán Drury 761",
     "loc":"San Martín de los Andes",
-    "cp":"(CP8370) Neuquen"
+    "cp":"(CP8370) Neuquen",
+    "contact":"Contacto"
   },
   "gen":{
     "hola":"hola",
-    "page-title":"Patagonia Tracker"
+    "page-title":"Patagonia Tracker",
+    "subscribe":"Subscribirme"
   }
 }
