@@ -99,14 +99,15 @@
     background-color: white;
     color:#55665B;
     #svgRoute {
-        width: 50%;
-        height: auto;
-        position: absolute;
     }
     
     .box{
         margin-left: var(--lanin-margin-left-gtsm);
         margin-right: var(--lanin-margin-right-gtsm);
+        .line-container{
+            position: absolute;
+            width: 47%;
+        }
         .item.l1{
             img{
                 max-width: 43em;
@@ -165,15 +166,15 @@
             }
         }
         .item4{
+            z-index: 9;
             .btn-conexion{
-                position: absolute;
-                padding-left: 78vh;
+                
                 img{
-                    width:43vh;
+                    width: 54%;
                 }
             }
             .btns{
-                height: 71vh;
+                height: 59vh;
                 margin-top: 9vh;
                 .btn{
                     width: 34%;
@@ -203,17 +204,19 @@
                 font-size: 304%;
                 text-align: left;
                 line-height: 1.4;
-                position: relative;
                 top: -1.8em;
-                padding-left: 9%;
             }
             p{
                 text-align: right;
             }
             img{
-                max-width: 45em;
+                max-width: 23em;
                 margin-right: 1em;
                 left: -3em;
+            }
+            .a{
+                background-color: white;
+                margin-top: 12em;
             }
         }
     }

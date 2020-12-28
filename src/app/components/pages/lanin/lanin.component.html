@@ -112,41 +112,62 @@
             <div 
             class="box"
             fxLayout="column" fxLayoutAlign="start center">
-            <div style="width:100%; height:auto;" id="route">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 910" id="svgRoute">
-                <circle r="10" id="dot" cy="-10" cx="400"  fill="red" stroke="red" stroke-width=".55"/>
-                <path id="path"
-                      d="M400,0
-                         l0,50
-                         a10,10 0 0,1 -10,10
-                         l-370,0
-                         a10,10 0 0,0 -10,10
-                         l0,500
-                         a10,10 0 0,0 10,10
-                         l370,0
-                         a10,10 0 0,1 10,10
-                         l0,300
-                         a10,10 0 0,1 -10,10
-                         l-370,0"
-                      style="stroke:red; stroke-width:10; fill:none;"/>
-                                                        
-                                                        
-                 <path id="basePath"
-                      d="M400,0
-                         l0,50
-                         a10,10 0 0,1 -10,10
-                         l-370,0
-                         a10,10 0 0,0 -10,10
-                         l0,500
-                         a10,10 0 0,0 10,10
-                         l370,0
-                         a10,10 0 0,1 10,10
-                         l0,300
-                         a10,10 0 0,1 -10,10
-                         l-370,0"
-                      style="stroke:#aaaaaa; fill:none;"/>                                                
-              </svg>
+            <div class="line-container" fxLayout="row" fxLayoutAlign="space-between start">
+              <div style="width:100%; height:auto;" id="route">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 1210" id="svgRoute">
+                  <circle r="4" id="dot" cy="-10" cx="400"  fill="#C1D4EE" stroke="back" stroke-width=".1"/>
+                  <path id="basePath"
+                  d="M400,0
+                  l0,50
+                  a10,10 0 0,1 -10,10
+                  l-370,0
+                  a10,10 0 0,0 -10,10
+                  l0,200
+                  a10,10 0 0,0 10,10
+                  l300,0
+                  a10,10 0 0,1 10,10
+                  l0,200
+                  a10,10 0 0,1 -10,10
+                  l-200,0
+                  a10,10 0 0,0 -10,10
+                  l0,60
+                  a10,10 0 0,0 10,10
+                  l250,0
+                  a10,10 0 0,1 10,10
+                  l0,530
+                  a10,10 0 0,1 -10,10
+                  l-80,0"
+                        style="stroke:#aaaaaa; fill:none;"/> 
+  
+                  <path id="path"
+                  d="M400,0
+                  l0,50
+                  a10,10 0 0,1 -10,10
+                  l-370,0
+                  a10,10 0 0,0 -10,10
+                  l0,200
+                  a10,10 0 0,0 10,10
+                  l300,0
+                  a10,10 0 0,1 10,10
+                  l0,200
+                  a10,10 0 0,1 -10,10
+                  l-200,0
+                  a10,10 0 0,0 -10,10
+                  l0,60
+                  a10,10 0 0,0 10,10
+                  l250,0
+                  a10,10 0 0,1 10,10
+                  l0,530
+                  a10,10 0 0,1 -10,10
+                  l-80,0"
+                        style="stroke:#C1D4EE; stroke-width:3; fill:none;"/>
+                                                          
+                                                          
+                                                                  
+                </svg>
+              </div>
             </div>
+            
               
               <div class="item item2">       
                 <h1 class="line-breaker">{{ 'lanin.sec2.a.title' | translate }}</h1>
@@ -210,18 +231,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="item item3 l2"><img class="l2" src="./assets/img/lanin/l2_movil.svg" alt=""></div>
-                  <img src="./assets/img/lanin/device.svg" alt="">
+                  <div class="item item3 l2"><img class="l2" src="./assets/img/lanin/l2_movil.svg" alt=""></div>                  
                 </div>
               </div>
               
               <div class="item item4">
-                  <h1 class="line-breaker">{{ 'lanin.sec2.b.title' | translate }}</h1>
-                  <p class="line-breaker">{{ 'lanin.sec2.b.text' | translate }}</p>
-                  <div>
-                    <div class="btn-conexion">
-                      <img src="./assets/img/lanin/btn-conexion.svg" alt="">
+                  <div class="a" fxLayout="row" fxLayoutAlign="space-between start" >
+                    <div>
+                      <img src="./assets/img/lanin/device.svg" alt="">
                     </div>
+                    <div>
+                      <h1 class="line-breaker">{{ 'lanin.sec2.b.title' | translate }}</h1>
+                      <p class="line-breaker">{{ 'lanin.sec2.b.text' | translate }}</p>
+                    </div>
+                  </div>                 
+                  
+                  <div>
+                    
                     <div class="btns" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap.lt-sm="10%" fxLayoutGap.sm="10%">
                       <div class="btn traking" fxLayout="column" fxLayoutAlign="start center" >
                         <img src="./assets/img/lanin/tracker.svg" alt="">
@@ -233,9 +259,15 @@
                         <h2>{{ 'lanin.sec2.b.2.title' | translate | uppercase }}</h2>
                         <p>{{ 'lanin.sec2.b.2.text' | translate }}</p>
                       </div>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="space-between start" >
+                      <h1 fxFlex=60% class="c-title line-breaker">{{ 'lanin.sec2.c.title' | translate }}</h1>
+                      <div fxFlex=40%  class="btn-conexion">
+                        <img src="./assets/img/lanin/btn-conexion.svg" alt="">
+                      </div>                      
                     </div>                    
                   </div>
-                  <h1 class="c-title line-breaker">{{ 'lanin.sec2.c.title' | translate }}</h1>
+                  
               </div>              
             </div>
           </div>

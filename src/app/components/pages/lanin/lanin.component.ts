@@ -31,7 +31,7 @@ export class LaninComponent implements OnInit {
     var pathLength = line.getTotalLength(),
     maxScrollTop =  document.documentElement.scrollHeight - window.innerHeight,
     percentDone = (document.documentElement.scrollTop - 250) / maxScrollTop,
-    length = percentDone * pathLength * 2;
+    length = percentDone * pathLength * 2.5;
     line.style.strokeDasharray = [ length,pathLength].join(' ');
   }
 
@@ -43,7 +43,7 @@ export class LaninComponent implements OnInit {
     var path:any = document.getElementById("path");
     var pathLen = path.getTotalLength();
     // Get the position of a point at <scrollPercentage> along the path.
-    var pt = path.getPointAtLength(scrollPercentage * pathLen * 2);
+    var pt = path.getPointAtLength(scrollPercentage * pathLen * 2.5);
     
     // Position the red dot at this point
     var dot = document.getElementById("dot");		  
