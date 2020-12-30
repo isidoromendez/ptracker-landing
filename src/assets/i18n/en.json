@@ -4,7 +4,7 @@
       "quienes-somos":"¿Who we are?",
       "que-hacemos":"¿What we do?",
       "proyectos": "Projects",
-      "contactarme":"Contact"
+      "contactarme":"Get in touch"
     },
     "sec1":{
       "title":"Technological innovation",
@@ -112,7 +112,7 @@
       }
     },
     "sec5":{
-      "title":"Preguntas frecuentes",
+      "title":"Frequently asked questions",
       "faq":{
         "1":{
           "Q":"Where do I pick up the tracking device?",
@@ -153,16 +153,16 @@
     "es":"Spanish"
   },
   "menu":{
-    "cr":"Copyright ©  2020 - Patagonia Tracker\nTodos los derechos reservados"
+    "cr":"Copyright ©  2020 - Patagonia Tracker\nAll rights reserved"
   },
   "footer":{
-    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . Todos los derechos reservados",
-    "pp":"Políticas de privacidad",
+    "cr":"(T) Copyright ©  2020 - Patagonia Tracker . All rights reserved",
+    "pp":"Privacy policies",
     "tel":"(02972) 427000",
     "dir":"Capitán Drury 761",
     "loc":"San Martín de los Andes",
     "cp":"(CP8370) Neuquen",
-    "contact":"Contacto"
+    "contact":"Get in touch"
   },
   "gen":{
     "hola":"Hi",

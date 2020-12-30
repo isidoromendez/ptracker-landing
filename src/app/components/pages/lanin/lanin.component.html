@@ -113,8 +113,8 @@
             class="box"
             fxLayout="column" fxLayoutAlign="start center">
             <div class="line-container" fxLayout="row" fxLayoutAlign="space-between start">
-              <div style="width:100%; height:auto;" id="route">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 1210" id="svgRoute">
+              <div style="width:100%; height:auto;" id="route" fxHide.lt-sm="true" fxHide.gt-lg="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415 1210" id="svgRoute">
                   <circle r="4" id="dot" cy="-10" cx="400"  fill="#C1D4EE" stroke="back" stroke-width=".1"/>
                   <path id="basePath"
                   d="M400,0
@@ -132,7 +132,7 @@
                   a10,10 0 0,0 -10,10
                   l0,60
                   a10,10 0 0,0 10,10
-                  l250,0
+                  l280,0
                   a10,10 0 0,1 10,10
                   l0,530
                   a10,10 0 0,1 -10,10
@@ -155,7 +155,7 @@
                   a10,10 0 0,0 -10,10
                   l0,60
                   a10,10 0 0,0 10,10
-                  l250,0
+                  l280,0
                   a10,10 0 0,1 10,10
                   l0,530
                   a10,10 0 0,1 -10,10
@@ -169,10 +169,11 @@
             </div>
             
               
-              <div class="item item2">       
+              <div class="item item2">   
+                <a class="anchor" id="a2"></a>    
                 <h1 class="line-breaker">{{ 'lanin.sec2.a.title' | translate }}</h1>
                 <div fxHide.lt-sm="true" fxHide.sm="true" class="sec-content" fxLayout="row" fxLayoutAlign="space-between center">
-                  <a class="anchor" id="a2"></a>
+                  
                   <div class="left" fxFlex="50%" >
                     <!--actividad-->
                     <div >
@@ -236,7 +237,8 @@
               </div>
               
               <div class="item item4">
-                  <div class="a" fxLayout="row" fxLayoutAlign="space-between start" >
+                  <div class="a" fxLayout="row" fxLayoutAlign="space-between start"
+                                fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-around center" >
                     <div>
                       <img src="./assets/img/lanin/device.svg" alt="">
                     </div>
@@ -260,9 +262,10 @@
                         <p>{{ 'lanin.sec2.b.2.text' | translate }}</p>
                       </div>
                     </div>
-                    <div fxLayout="row" fxLayoutAlign="space-between start" >
-                      <h1 fxFlex=60% class="c-title line-breaker">{{ 'lanin.sec2.c.title' | translate }}</h1>
-                      <div fxFlex=40%  class="btn-conexion">
+                    <div fxLayout="row" fxLayoutAlign="space-between start" 
+                         fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-between center">
+                      <h1 fxFlex.gt-xs=60% class="c-title line-breaker">{{ 'lanin.sec2.c.title' | translate }}</h1>
+                      <div fxFlex.gt-xs=40%  class="btn-conexion" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-between center">
                         <img src="./assets/img/lanin/btn-conexion.svg" alt="">
                       </div>                      
                     </div>                    

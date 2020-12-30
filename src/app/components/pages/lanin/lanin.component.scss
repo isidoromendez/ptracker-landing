@@ -2,13 +2,13 @@
 #a1.anchor {
     display: block;
     position: relative;
-    top: 3em;
+    top: 0em;
     visibility: hidden;
 }
 #a2.anchor {
     display: block;
     position: relative;
-    top: -28em;
+    top: -10em;
     visibility: hidden;
 }
 #a3.anchor {
@@ -22,6 +22,33 @@
     position: relative;
     top: -1em;
     visibility: hidden;
+}
+
+.ltsm{
+    #a1.anchor {
+        display: block;
+        position: relative;
+        top: 0em;
+        visibility: hidden;
+    }
+    #a2.anchor {
+        display: block;
+        position: relative;
+        top: -6em;
+        visibility: hidden;
+    }
+    #a3.anchor {
+        display: block;
+        position: relative;
+        top: -10em;
+        visibility: hidden;
+    }
+    #a4.anchor {
+        display: block;
+        position: relative;
+        top: -1em;
+        visibility: hidden;
+    }
 }
 
 
@@ -176,6 +203,7 @@
             .btns{
                 height: 59vh;
                 margin-top: 9vh;
+                min-height: 17em;
                 .btn{
                     width: 34%;
                 }
@@ -251,6 +279,7 @@
             }
         }
         .item.item2{
+            margin-top: 6vh;
             img{
                 width: 80%;
                 margin: 1em 0 2em 0;
@@ -275,17 +304,14 @@
         }
         .item4{
             .btn-conexion{
-                position: absolute;
-                padding-left: 0vh;
-                padding-top: 7em;
                 img{
-                    width: 51%;
-                    padding-left: 12vh;
+                    width: 46%;
                 }
             }
             .btns{
-                height: 32vh;
-                margin-top: 9vh;
+                height: 25vh;
+                margin-top: 5vh;
+                min-height: 17em;
                 img{
                     width:100%;
                 }
@@ -301,7 +327,7 @@
                 }
             }
             h1{
-                text-align: right;
+                text-align: center;
                 font-weight: 300;
                 font-size: 225%;
                 line-height: 1.4;
@@ -310,23 +336,23 @@
             .c-title{
                 font-weight: 300;
                 font-size: 225%;
-                text-align: left;
+                text-align: center;
                 line-height: 1.4;
-                position: relative;
-                padding-left: 9%;
-                padding-bottom: 14vh;
             }
             p{
-                text-align: right;
+                text-align: center;
                 font-size: 141%;
                 line-height: 1.6;
                 font-weight: 300;
                 width: 100%;
             }
             img{
-                max-width: 45em;
                 margin-right: 1em;
                 left: -3em;
+            }
+            .a{
+                background-color: white;
+                margin-top: 6em;
             }
         }
     }
@@ -530,6 +556,7 @@
             margin-bottom: 2em;
             font-weight: 100;
         }
+        
     }
 }
 
@@ -543,6 +570,9 @@
             padding-top: 5em;
             margin-right: var(--margin-right-gtsm);
             margin-left: var(--margin-left-gtsm);
+            .mat-expansion-panel-header{
+                height: 6em;
+            }
             h1{
                 font-size: 400%;
                 margin-bottom: 1em;
