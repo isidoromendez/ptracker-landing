@@ -22,4 +22,8 @@ export class HomeComponent implements OnInit {
     video.play();
   }
 
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
+  }
+
 }
