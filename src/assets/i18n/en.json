@@ -146,7 +146,10 @@
     "nombre":"Full name",
     "email":"E-mail",
     "mensaje":"[Type your message here]",
-    "enviar":"¡Send Message!"
+    "enviar":"¡Send Message!",
+    "error": "No pudimos enviar tu mensaje, intenta en otro momento",
+    "success": "Tu mensaje fue enviado!",
+    "mailerr": "No pudimos enviar tu mensaje, revisa que el mail indicado sea correcto."
   },
   "lang-select":{
     "en":"English",

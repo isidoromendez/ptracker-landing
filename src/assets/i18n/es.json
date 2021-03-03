@@ -149,7 +149,10 @@
     "nombre":" Nombre y apellido",
     "email":"Email",
     "mensaje":"Mensaje",
-    "enviar":"¡Enviar Mensaje!"
+    "enviar":"¡Enviar Mensaje!",
+    "error": "No pudimos enviar tu mensaje, intenta en otro momento",
+    "success": "Tu mensaje fue enviado!",
+    "mailerr": "No pudimos enviar tu mensaje, revisa que el mail indicado sea correcto."
   },
   "lang-select":{
     "en":"Inglés",

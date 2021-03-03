@@ -157,17 +157,26 @@
             <div fxFlex="66%" fxFlex.sm="100%" fxFlex.lt-sm="100%">
               <div class="top"><h1 class="display-1">{{ 'contact-form.title' | translate }}</h1></div>
               <div class="contact-form">
+              <form (ngSubmit)="onSubmit(ContactForm);" #ContactForm="ngForm">
                 <div class="contact-container" fxLayout="column" fxLayoutAlign="space-between stretch" >
                   <div>
                     <mat-form-field appearance="fill" fxFlex="100%">
                       <mat-label>{{ 'contact-form.nombre' | translate }}</mat-label>
-                      <input matInput>
+                      <input matInput 
+                      id="name"
+                      required
+                      [(ngModel)]="model.name" name="name">
                     </mat-form-field>
                   </div>
                   <div>
                     <mat-form-field appearance="fill" fxFlex="100%">
                       <mat-label>{{ 'contact-form.email' | translate }}</mat-label>
-                      <input matInput>
+                      <input matInput
+                      type="email"
+                      email="true"
+                      id="mail"
+                      required
+                      [(ngModel)]="model.mail" name="mail">
                     </mat-form-field>
                   </div>
                   <div>
@@ -175,7 +184,10 @@
                       <mat-label>{{ 'contact-form.mensaje' | translate }}</mat-label>
                       <textarea  cdkTextareaAutosize
                       cdkAutosizeMinRows="5"
-                      cdkAutosizeMaxRows="15"  matInput placeholder=""></textarea>
+                      cdkAutosizeMaxRows="15"  matInput placeholder=""
+                      id="mensaje"
+                      required
+                      [(ngModel)]="model.mensaje" name="mensaje"></textarea>
                     </mat-form-field>
                   </div>
                   <div fxFlexAlign="end">
@@ -183,9 +195,16 @@
                       (resolved)="resolved($event)"
                       siteKey="YOUR_SITE_KEY"
                     ></re-captcha> -->
-                    <button mat-flat-button color="primary">{{ 'contact-form.enviar' | translate | uppercase }}</button>
+                    <button type="submit" mat-flat-button color="primary" [disabled]="!ContactForm.form.valid">{{ 'contact-form.enviar' | translate | uppercase }}</button>                    
+                    <!-- <div class="err-msg" [disabled]="!submitted">Tu mensaje no puede ser enviado en este momento.</div> -->
                   </div>
                 </div>
+              </form>
+              </div>
+              <div class="mailmsg" >
+                <div class="success" *ngIf="success">{{ 'contact-form.success' | translate }}</div>
+                <div class="mailerr" *ngIf="mailerr">{{ 'contact-form.mailerr' | translate }}</div>
+                <div class="mailerr" *ngIf="error">{{ 'contact-form.error' | translate }}</div>
               </div>
             </div>
           </div>

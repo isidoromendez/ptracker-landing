@@ -131,9 +131,10 @@
     .box{
         margin-left: var(--lanin-margin-left-gtsm);
         margin-right: var(--lanin-margin-right-gtsm);
+        width:57em;
         .line-container{
             position: absolute;
-            width: 47%;
+            width: 42em;
         }
         .item.l1{
             img{
@@ -148,7 +149,7 @@
             }
         }
         .item{
-            width: 129vh;
+            
             h1{
                 font-weight: 300;
                 font-size: 304%;
@@ -253,6 +254,7 @@
 .ltsm .sec2{
     margin-left: var(--lanin-margin-left-ltsm);
     margin-right: var(--lanin-margin-right-ltsm);
+    
     .item.l1{
         img{
             max-width: 18em;
@@ -268,6 +270,7 @@
     .box{
         margin-left: var(--margin-left-ltsm);
         margin-right: var(--margin-right-ltsm);
+        width:auto;
         .item{
             width: auto;
             h1{

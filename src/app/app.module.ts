@@ -24,6 +24,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { LangSelectComponent } from './components/pieces/lang-select/lang-select.component';
 import { LaninComponent } from './components/pages/lanin/lanin.component';
 import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
+import { FormsModule } from '@angular/forms';
 
 
 // AoT requires an exported function for factories
@@ -61,7 +62,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatInputModule,
     MatExpansionModule,
     RecaptchaModule,
-    RecaptchaFormsModule
+    RecaptchaFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
